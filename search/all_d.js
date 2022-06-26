@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['totalspeedincrement_0',['TotalSpeedIncrement',['../classu_lua_1_1_paddle_game_1_1_settings.html#aafd9a40b8a4f424cbdfb0cf75c02f7d7',1,'uLua::PaddleGame::Settings']]]
+  ['valuetoluavalue_0',['ValueToLuaValue',['../classu_lua_1_1_lua.html#aa8d75530e740d1ac8bae3e5a228c1295',1,'uLua::Lua']]]
 ];

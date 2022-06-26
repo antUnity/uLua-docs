@@ -38,17 +38,18 @@ var NAVTREE =
         ] ],
         [ "3. Using the Event Handling System", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md10", [
           [ "3.1. Invoking Game Events", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md11", null ],
-          [ "3.2. Registering and Removing Event Handlers", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md12", null ],
-          [ "3.3. The SceneLoaded Event", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md13", null ]
+          [ "3.2. Registering Event Handlers", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md12", null ],
+          [ "3.3. Removing Event Handlers", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md13", null ],
+          [ "3.4. The SceneLoaded Event", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md14", null ]
         ] ],
-        [ "4. Exposing Objects to Lua", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md14", [
-          [ "4.1. The ExposedMonoBehaviour class", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md15", null ],
-          [ "4.2. The ExposedClass class", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md16", null ],
-          [ "4.3. Lua Object Context", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md17", null ],
-          [ "4.4. Using Object Callbacks", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md18", null ],
-          [ "4.5. Hiding Class Members from Lua", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md19", null ]
+        [ "4. Exposing Objects to Lua", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md15", [
+          [ "4.1. The ExposedMonoBehaviour class", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md16", null ],
+          [ "4.2. The ExposedClass class", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md17", null ],
+          [ "4.3. Lua Object Context", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md18", null ],
+          [ "4.4. Using Object Callbacks", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md19", null ],
+          [ "4.5. Hiding Class Members from Lua", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md20", null ]
         ] ],
-        [ "5. Further Support", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md20", null ]
+        [ "5. Further Support", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md21", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [

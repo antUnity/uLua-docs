@@ -2,8 +2,8 @@ var classu_lua_1_1_a_p_i =
 [
     [ "AddUserScript", "classu_lua_1_1_a_p_i.html#aca720a85917454616563e0d87df2f3c1", null ],
     [ "ClearUserScripts", "classu_lua_1_1_a_p_i.html#adfc7ec8dcb8b8b80dad7d10efe8f074d", null ],
-    [ "ExecuteExternalFile", "classu_lua_1_1_a_p_i.html#a0445878222b3fdca1032d377ce97e9dd", null ],
-    [ "ExecuteFile", "classu_lua_1_1_a_p_i.html#a6468f952c86d052bc4fd1a59e76ac9ea", null ],
+    [ "ExecuteExternalFile", "classu_lua_1_1_a_p_i.html#a7b506958b718c9b3917e917544b05449", null ],
+    [ "ExecuteFile", "classu_lua_1_1_a_p_i.html#a9a5ef26647eabe286c7903ce1be3b68c", null ],
     [ "Expose< T >", "classu_lua_1_1_a_p_i.html#aad4b6cab0c4aac473d9c42aea6902556", null ],
     [ "Invoke", "classu_lua_1_1_a_p_i.html#ae85b13a4101bcfca3c7ad3e552d5e7cf", null ],
     [ "RegisterEventHandler", "classu_lua_1_1_a_p_i.html#ac2bba495d332bb250cb8cdfe724478d7", null ],

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['name_0',['Name',['../interfaceu_lua_1_1_i_has_lua_indexer.html#a7ece9b1f574042f4a0e2f997a893f93d',1,'uLua.IHasLuaIndexer.Name()'],['../classu_lua_1_1_lua_class.html#af03641969c645bc785574d048a247e5e',1,'uLua.LuaClass.Name()'],['../classu_lua_1_1_lua_mono_behaviour.html#a0bfb80e2c7d342e14fbbb0e8a4a1239a',1,'uLua.LuaMonoBehaviour.Name()']]],
-  ['newfunction_1',['NewFunction',['../classu_lua_1_1_lua.html#ac83aa7b7664b2dc277e5d77028b6727f',1,'uLua::Lua']]],
-  ['newtable_2',['NewTable',['../classu_lua_1_1_lua.html#adcb9f9f5b213571a065bf3f3987c03ef',1,'uLua::Lua']]]
+  ['lua_0',['Lua',['../classu_lua_1_1_lua.html',1,'uLua']]],
+  ['luaclass_1',['LuaClass',['../classu_lua_1_1_lua_class.html#a00430aab29d44037157028c4f81b2708',1,'uLua.LuaClass.LuaClass()'],['../classu_lua_1_1_lua_class.html',1,'uLua.LuaClass']]],
+  ['luamonobehaviour_2',['LuaMonoBehaviour',['../classu_lua_1_1_lua_mono_behaviour.html',1,'uLua']]],
+  ['luascriptsextension_3',['LuaScriptsExtension',['../classu_lua_1_1_a_p_i.html#a9ca842887a9a8735030c7ec2c7696cdf',1,'uLua::API']]]
 ];

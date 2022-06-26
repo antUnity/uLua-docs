@@ -5,7 +5,7 @@ var classu_lua_1_1_lua_class =
     [ "Invoke", "classu_lua_1_1_lua_class.html#a3906ca0f5903d84d06222a815205af7d", null ],
     [ "Register", "classu_lua_1_1_lua_class.html#a415fed04553b38f8106f95ec60a6b36c", null ],
     [ "Context", "classu_lua_1_1_lua_class.html#a0dbb18f0a59c352ddc905a4a1de8ab60", null ],
-    [ "ID", "classu_lua_1_1_lua_class.html#a7ae8d748d9f1100982ac23502eecad32", null ],
+    [ "Handle", "classu_lua_1_1_lua_class.html#ac9acda822a2dab475ce05f379f843067", null ],
     [ "IsExposed", "classu_lua_1_1_lua_class.html#ac32bec6c69304485ce48eee74f420345", null ],
     [ "Name", "classu_lua_1_1_lua_class.html#af03641969c645bc785574d048a247e5e", null ],
     [ "this[DynValue Key]", "classu_lua_1_1_lua_class.html#aa5e39f899a32931d2699eb535330f8dd", null ],
