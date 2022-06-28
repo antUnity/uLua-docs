@@ -1,9 +1,9 @@
 var classu_lua_1_1_lua_mono_behaviour =
 [
     [ "Expose", "classu_lua_1_1_lua_mono_behaviour.html#a14c289a707a80490eb155d0deded7c48", null ],
-    [ "Invoke", "classu_lua_1_1_lua_mono_behaviour.html#a159146d62a98aa92ab8c300c48403a6e", null ],
+    [ "InvokeLua", "classu_lua_1_1_lua_mono_behaviour.html#aa874da2a777e09784bb9f9446eb160ff", null ],
     [ "OnDestroy", "classu_lua_1_1_lua_mono_behaviour.html#a45395ceb9d86fe9b13489a1441af6dac", null ],
-    [ "Register", "classu_lua_1_1_lua_mono_behaviour.html#a0a3969c59ecee731748466719b6859e4", null ],
+    [ "Register", "classu_lua_1_1_lua_mono_behaviour.html#a3f028daf9f38d9e13d8fc3aafbe6c628", null ],
     [ "Context", "classu_lua_1_1_lua_mono_behaviour.html#a6bdf5476d043616df482defa708a31f3", null ],
     [ "Handle", "classu_lua_1_1_lua_mono_behaviour.html#afe9514a1edfb41600b0375f59f047349", null ],
     [ "IsExposed", "classu_lua_1_1_lua_mono_behaviour.html#a2d99975f1061889e20d526c44724510d", null ],

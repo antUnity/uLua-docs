@@ -2,8 +2,8 @@ var classu_lua_1_1_lua_class =
 [
     [ "LuaClass", "classu_lua_1_1_lua_class.html#a00430aab29d44037157028c4f81b2708", null ],
     [ "Expose", "classu_lua_1_1_lua_class.html#a3237e18dcfdab59d0fc0128c2a6bb17f", null ],
-    [ "Invoke", "classu_lua_1_1_lua_class.html#a3906ca0f5903d84d06222a815205af7d", null ],
-    [ "Register", "classu_lua_1_1_lua_class.html#a415fed04553b38f8106f95ec60a6b36c", null ],
+    [ "InvokeLua", "classu_lua_1_1_lua_class.html#a800669071b671d471027c3f261054adc", null ],
+    [ "Register", "classu_lua_1_1_lua_class.html#aba0a50d8576927da7ef769e432d12b6a", null ],
     [ "Context", "classu_lua_1_1_lua_class.html#a0dbb18f0a59c352ddc905a4a1de8ab60", null ],
     [ "Handle", "classu_lua_1_1_lua_class.html#ac9acda822a2dab475ce05f379f843067", null ],
     [ "IsExposed", "classu_lua_1_1_lua_class.html#ac32bec6c69304485ce48eee74f420345", null ],

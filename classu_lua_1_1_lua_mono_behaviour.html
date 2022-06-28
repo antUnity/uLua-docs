@@ -93,70 +93,71 @@ $(document).ready(function(){initNavTree('classu_lua_1_1_lua_mono_behaviour.html
 </div><!--header-->
 <div class="contents">
 
-<p>MonoBehaviour script which establishes a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object framework.  
+<p>MonoBehaviour script which establishes a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object framework. 
  <a href="classu_lua_1_1_lua_mono_behaviour.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a14c289a707a80490eb155d0deded7c48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html#a14c289a707a80490eb155d0deded7c48">Expose</a> ()</td></tr>
-<tr class="memdesc:a14c289a707a80490eb155d0deded7c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to raise a flag when an object is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>.  <a href="classu_lua_1_1_lua_mono_behaviour.html#a14c289a707a80490eb155d0deded7c48">More...</a><br /></td></tr>
+<tr class="memdesc:a14c289a707a80490eb155d0deded7c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to raise a flag when an object is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. <a href="classu_lua_1_1_lua_mono_behaviour.html#a14c289a707a80490eb155d0deded7c48">More...</a><br /></td></tr>
 <tr class="separator:a14c289a707a80490eb155d0deded7c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a159146d62a98aa92ab8c300c48403a6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html#a159146d62a98aa92ab8c300c48403a6e">Invoke</a> (string FunctionName)</td></tr>
-<tr class="memdesc:a159146d62a98aa92ab8c300c48403a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> callback function.  <a href="classu_lua_1_1_lua_mono_behaviour.html#a159146d62a98aa92ab8c300c48403a6e">More...</a><br /></td></tr>
-<tr class="separator:a159146d62a98aa92ab8c300c48403a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a3969c59ecee731748466719b6859e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html#a0a3969c59ecee731748466719b6859e4">Register</a> (string FunctionName, string Code=&quot;&quot;)</td></tr>
-<tr class="memdesc:a0a3969c59ecee731748466719b6859e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> callback function. This method is available in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>.  <a href="classu_lua_1_1_lua_mono_behaviour.html#a0a3969c59ecee731748466719b6859e4">More...</a><br /></td></tr>
-<tr class="separator:a0a3969c59ecee731748466719b6859e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa874da2a777e09784bb9f9446eb160ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html#aa874da2a777e09784bb9f9446eb160ff">InvokeLua</a> (string FunctionName, params object[] args)</td></tr>
+<tr class="memdesc:aa874da2a777e09784bb9f9446eb160ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> callback function. <a href="classu_lua_1_1_lua_mono_behaviour.html#aa874da2a777e09784bb9f9446eb160ff">More...</a><br /></td></tr>
+<tr class="separator:aa874da2a777e09784bb9f9446eb160ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f028daf9f38d9e13d8fc3aafbe6c628"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html#a3f028daf9f38d9e13d8fc3aafbe6c628">Register</a> (string FunctionName, string Code=&quot;&quot;, string args=&quot;&quot;)</td></tr>
+<tr class="memdesc:a3f028daf9f38d9e13d8fc3aafbe6c628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> callback function. This method is available in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. <a href="classu_lua_1_1_lua_mono_behaviour.html#a3f028daf9f38d9e13d8fc3aafbe6c628">More...</a><br /></td></tr>
+<tr class="separator:a3f028daf9f38d9e13d8fc3aafbe6c628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a45395ceb9d86fe9b13489a1441af6dac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html#a45395ceb9d86fe9b13489a1441af6dac">OnDestroy</a> ()</td></tr>
-<tr class="memdesc:a45395ceb9d86fe9b13489a1441af6dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the object from the <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> context.  <a href="classu_lua_1_1_lua_mono_behaviour.html#a45395ceb9d86fe9b13489a1441af6dac">More...</a><br /></td></tr>
+<tr class="memdesc:a45395ceb9d86fe9b13489a1441af6dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the object from <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. <a href="classu_lua_1_1_lua_mono_behaviour.html#a45395ceb9d86fe9b13489a1441af6dac">More...</a><br /></td></tr>
 <tr class="separator:a45395ceb9d86fe9b13489a1441af6dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a6642f068a9c0446b414489f9a8ce1733"><td class="memItemLeft" align="right" valign="top">DynValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html#a6642f068a9c0446b414489f9a8ce1733">this[DynValue Key]</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a6642f068a9c0446b414489f9a8ce1733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> value indexed by the DynValue Key.  <a href="classu_lua_1_1_lua_mono_behaviour.html#a6642f068a9c0446b414489f9a8ce1733">More...</a><br /></td></tr>
+<tr class="memdesc:a6642f068a9c0446b414489f9a8ce1733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> value indexed by the DynValue Key. <a href="classu_lua_1_1_lua_mono_behaviour.html#a6642f068a9c0446b414489f9a8ce1733">More...</a><br /></td></tr>
 <tr class="separator:a6642f068a9c0446b414489f9a8ce1733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a291d159032e91a0f42d41342c99e803a"><td class="memItemLeft" align="right" valign="top">DynValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html#a291d159032e91a0f42d41342c99e803a">this[string Key]</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a291d159032e91a0f42d41342c99e803a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> value indexed by the string key.  <a href="classu_lua_1_1_lua_mono_behaviour.html#a291d159032e91a0f42d41342c99e803a">More...</a><br /></td></tr>
+<tr class="memdesc:a291d159032e91a0f42d41342c99e803a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> value indexed by the string key. <a href="classu_lua_1_1_lua_mono_behaviour.html#a291d159032e91a0f42d41342c99e803a">More...</a><br /></td></tr>
 <tr class="separator:a291d159032e91a0f42d41342c99e803a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bdf5476d043616df482defa708a31f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html">LuaMonoBehaviour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html#a6bdf5476d043616df482defa708a31f3">Context</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a6bdf5476d043616df482defa708a31f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to access/set the context of an object.  <a href="classu_lua_1_1_lua_mono_behaviour.html#a6bdf5476d043616df482defa708a31f3">More...</a><br /></td></tr>
+<tr class="memdesc:a6bdf5476d043616df482defa708a31f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to access/set the context of an object. <a href="classu_lua_1_1_lua_mono_behaviour.html#a6bdf5476d043616df482defa708a31f3">More...</a><br /></td></tr>
 <tr class="separator:a6bdf5476d043616df482defa708a31f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe9514a1edfb41600b0375f59f047349"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html#afe9514a1edfb41600b0375f59f047349">Handle</a><code> [get]</code></td></tr>
-<tr class="memdesc:afe9514a1edfb41600b0375f59f047349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to access the unique Handle of the <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object.  <a href="classu_lua_1_1_lua_mono_behaviour.html#afe9514a1edfb41600b0375f59f047349">More...</a><br /></td></tr>
+<tr class="memdesc:afe9514a1edfb41600b0375f59f047349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to access the unique Handle of a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object. <a href="classu_lua_1_1_lua_mono_behaviour.html#afe9514a1edfb41600b0375f59f047349">More...</a><br /></td></tr>
 <tr class="separator:afe9514a1edfb41600b0375f59f047349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d99975f1061889e20d526c44724510d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html#a2d99975f1061889e20d526c44724510d">IsExposed</a><code> [get]</code></td></tr>
-<tr class="memdesc:a2d99975f1061889e20d526c44724510d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to determine if an object has been exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>.  <a href="classu_lua_1_1_lua_mono_behaviour.html#a2d99975f1061889e20d526c44724510d">More...</a><br /></td></tr>
+<tr class="memdesc:a2d99975f1061889e20d526c44724510d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to track if an object has been exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. <a href="classu_lua_1_1_lua_mono_behaviour.html#a2d99975f1061889e20d526c44724510d">More...</a><br /></td></tr>
 <tr class="separator:a2d99975f1061889e20d526c44724510d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bfb80e2c7d342e14fbbb0e8a4a1239a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html#a0bfb80e2c7d342e14fbbb0e8a4a1239a">Name</a><code> [get]</code></td></tr>
-<tr class="memdesc:a0bfb80e2c7d342e14fbbb0e8a4a1239a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to access the name of an object.  <a href="classu_lua_1_1_lua_mono_behaviour.html#a0bfb80e2c7d342e14fbbb0e8a4a1239a">More...</a><br /></td></tr>
+<tr class="memdesc:a0bfb80e2c7d342e14fbbb0e8a4a1239a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to access the name of an object. <a href="classu_lua_1_1_lua_mono_behaviour.html#a0bfb80e2c7d342e14fbbb0e8a4a1239a">More...</a><br /></td></tr>
 <tr class="separator:a0bfb80e2c7d342e14fbbb0e8a4a1239a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interfaceu_lua_1_1_i_has_lua_indexer"><td colspan="2" onclick="javascript:toggleInherit('properties_interfaceu_lua_1_1_i_has_lua_indexer')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html">uLua.IHasLuaIndexer</a></td></tr>
 <tr class="memitem:a034ed943f2a4fee3fbb0a6dbab61f5d2 inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="memItemLeft" align="right" valign="top">DynValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html#a034ed943f2a4fee3fbb0a6dbab61f5d2">this[DynValue Key]</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a034ed943f2a4fee3fbb0a6dbab61f5d2 inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> value indexed by the DynValue Key.  <a href="interfaceu_lua_1_1_i_has_lua_indexer.html#a034ed943f2a4fee3fbb0a6dbab61f5d2">More...</a><br /></td></tr>
+<tr class="memdesc:a034ed943f2a4fee3fbb0a6dbab61f5d2 inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> value indexed by the DynValue Key. <a href="interfaceu_lua_1_1_i_has_lua_indexer.html#a034ed943f2a4fee3fbb0a6dbab61f5d2">More...</a><br /></td></tr>
 <tr class="separator:a034ed943f2a4fee3fbb0a6dbab61f5d2 inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a205fafe2263a36b7172f312694d5288b inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="memItemLeft" align="right" valign="top">DynValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html#a205fafe2263a36b7172f312694d5288b">this[string Key]</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a205fafe2263a36b7172f312694d5288b inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> value indexed by the string key.  <a href="interfaceu_lua_1_1_i_has_lua_indexer.html#a205fafe2263a36b7172f312694d5288b">More...</a><br /></td></tr>
+<tr class="memdesc:a205fafe2263a36b7172f312694d5288b inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> value indexed by the string key. <a href="interfaceu_lua_1_1_i_has_lua_indexer.html#a205fafe2263a36b7172f312694d5288b">More...</a><br /></td></tr>
 <tr class="separator:a205fafe2263a36b7172f312694d5288b inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47e06ba6bfc788b7916fe4029278151c inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html">LuaMonoBehaviour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html#a47e06ba6bfc788b7916fe4029278151c">Context</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a47e06ba6bfc788b7916fe4029278151c inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to access/set the context of an object.  <a href="interfaceu_lua_1_1_i_has_lua_indexer.html#a47e06ba6bfc788b7916fe4029278151c">More...</a><br /></td></tr>
+<tr class="memdesc:a47e06ba6bfc788b7916fe4029278151c inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to access/set the context of an object. <a href="interfaceu_lua_1_1_i_has_lua_indexer.html#a47e06ba6bfc788b7916fe4029278151c">More...</a><br /></td></tr>
 <tr class="separator:a47e06ba6bfc788b7916fe4029278151c inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a360e65110df1a93b442d1b4c1842b1b5 inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html#a360e65110df1a93b442d1b4c1842b1b5">Handle</a><code> [get]</code></td></tr>
-<tr class="memdesc:a360e65110df1a93b442d1b4c1842b1b5 inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to access the unique Handle of the <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object.  <a href="interfaceu_lua_1_1_i_has_lua_indexer.html#a360e65110df1a93b442d1b4c1842b1b5">More...</a><br /></td></tr>
+<tr class="memdesc:a360e65110df1a93b442d1b4c1842b1b5 inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to access the unique Handle of a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object. <a href="interfaceu_lua_1_1_i_has_lua_indexer.html#a360e65110df1a93b442d1b4c1842b1b5">More...</a><br /></td></tr>
 <tr class="separator:a360e65110df1a93b442d1b4c1842b1b5 inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa81522f37d9761cccb2ec20ad7b9784d inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html#aa81522f37d9761cccb2ec20ad7b9784d">IsExposed</a><code> [get]</code></td></tr>
-<tr class="memdesc:aa81522f37d9761cccb2ec20ad7b9784d inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to determine if an object has been exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>.  <a href="interfaceu_lua_1_1_i_has_lua_indexer.html#aa81522f37d9761cccb2ec20ad7b9784d">More...</a><br /></td></tr>
+<tr class="memdesc:aa81522f37d9761cccb2ec20ad7b9784d inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to track if an object has been exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. <a href="interfaceu_lua_1_1_i_has_lua_indexer.html#aa81522f37d9761cccb2ec20ad7b9784d">More...</a><br /></td></tr>
 <tr class="separator:aa81522f37d9761cccb2ec20ad7b9784d inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ece9b1f574042f4a0e2f997a893f93d inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html#a7ece9b1f574042f4a0e2f997a893f93d">Name</a><code> [get]</code></td></tr>
-<tr class="memdesc:a7ece9b1f574042f4a0e2f997a893f93d inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to access the name of an object.  <a href="interfaceu_lua_1_1_i_has_lua_indexer.html#a7ece9b1f574042f4a0e2f997a893f93d">More...</a><br /></td></tr>
+<tr class="memdesc:a7ece9b1f574042f4a0e2f997a893f93d inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to access the name of an object. <a href="interfaceu_lua_1_1_i_has_lua_indexer.html#a7ece9b1f574042f4a0e2f997a893f93d">More...</a><br /></td></tr>
 <tr class="separator:a7ece9b1f574042f4a0e2f997a893f93d inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >MonoBehaviour script which establishes a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object framework. </p>
-<p >You may use this class as a base for your game object wrappers. All public members of derived classes will be exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. </p>
+<div class="textblock"><p >MonoBehaviour script which establishes a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object framework.</p>
+<p >Instances of this class can be exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> by calling <code>uLua.API.Expose()</code>. All public members of derived classes will be exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. Prior to exposing an object of type <a class="el" href="classu_lua_1_1_lua_mono_behaviour.html" title="MonoBehaviour script which establishes a Lua object framework.">uLua.LuaMonoBehaviour</a>, the relevant type <code>T</code> must be registered to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> by calling <code>API.RegisterIndexedType()</code>. <br  />
+ </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a14c289a707a80490eb155d0deded7c48" name="a14c289a707a80490eb155d0deded7c48"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a14c289a707a80490eb155d0deded7c48">&#9670;&nbsp;</a></span>Expose()</h2>
@@ -181,15 +182,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Used to raise a flag when an object is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. </p>
-<p >The IsExposed property may be used to check if the flag has been raised. The 'exposed' flag cannot be reset. </p>
+<p>Used to raise a flag when an object is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>.</p>
+<p >The property <code>IsExposed</code> can be used to check if this method has been called. The <code>IsExposed</code> flag cannot be reset. </p>
 
 <p>Implements <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html">uLua.IHasLuaIndexer</a>.</p>
 
 </div>
 </div>
-<a id="a159146d62a98aa92ab8c300c48403a6e" name="a159146d62a98aa92ab8c300c48403a6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a159146d62a98aa92ab8c300c48403a6e">&#9670;&nbsp;</a></span>Invoke()</h2>
+<a id="aa874da2a777e09784bb9f9446eb160ff" name="aa874da2a777e09784bb9f9446eb160ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa874da2a777e09784bb9f9446eb160ff">&#9670;&nbsp;</a></span>InvokeLua()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,11 +199,21 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void uLua.LuaMonoBehaviour.Invoke </td>
+          <td class="memname">void uLua.LuaMonoBehaviour.InvokeLua </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>FunctionName</em></td><td>)</td>
+          <td class="paramname"><em>FunctionName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">params object[]&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -212,10 +223,11 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Invokes a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> callback function. </p>
-<p >The callback function may be implemented in a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> script for this object or by explicitly calling the <a class="el" href="classu_lua_1_1_lua_mono_behaviour.html#a0a3969c59ecee731748466719b6859e4" title="Registers a Lua callback function. This method is available in Lua.">Register()</a> function. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Invokes a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> callback function.</p>
+<p >The callback function must be implemented in a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> script as a member of this object. Alternatively, you can register a callback function by explicitly calling <a class="el" href="classu_lua_1_1_lua_mono_behaviour.html#a3f028daf9f38d9e13d8fc3aafbe6c628" title="Registers a Lua callback function. This method is available in Lua.">uLua.LuaMonoBehaviour.Register()</a> with the relevant <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> code. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FunctionName</td><td>The name of the callback function to be called. </td></tr>
+    <tr><td class="paramname">args</td><td>(Optional) Parameters for the callback function. </td></tr>
   </table>
   </dd>
 </dl>
@@ -245,13 +257,13 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Removes the object from the <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> context. </p>
-<p >This method is called by Unity Engine when an object is destroyed. </p>
+<p>Removes the object from <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>.</p>
+<p >This method is called by Unity Engine when a game object is destroyed. </p>
 
 </div>
 </div>
-<a id="a0a3969c59ecee731748466719b6859e4" name="a0a3969c59ecee731748466719b6859e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a3969c59ecee731748466719b6859e4">&#9670;&nbsp;</a></span>Register()</h2>
+<a id="a3f028daf9f38d9e13d8fc3aafbe6c628" name="a3f028daf9f38d9e13d8fc3aafbe6c628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f028daf9f38d9e13d8fc3aafbe6c628">&#9670;&nbsp;</a></span>Register()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,7 +281,13 @@ Properties</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>Code</em> = <code>&quot;&quot;</code>&#160;</td>
+          <td class="paramname"><em>Code</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>args</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -284,11 +302,12 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Registers a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> callback function. This method is available in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. </p>
-<p >This method is called internally to automatically register callbacks as they are invoked. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Registers a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> callback function. This method is available in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>.</p>
+<p >Used to register a callback function by providing the relevant <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> code. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FunctionName</td><td>The name of the callback function to be registered. </td></tr>
     <tr><td class="paramname">Code</td><td>(Optional) The body of the function to be registered in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. If omitted, an empty function with the specified name is defined. </td></tr>
+    <tr><td class="paramname">args</td><td>(Optional) Parameters for the callback function. Must be separated by comma as they would be in a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> function definition, e.g. 'arg1,arg2'. </td></tr>
   </table>
   </dd>
 </dl>
@@ -316,8 +335,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Used to access/set the context of an object. </p>
-<p >The Context is the parent of an object in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. If not defined, the object will be global in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. </p>
+<p>Used to access/set the context of an object.</p>
+<p >The <code>Context</code> object represents the parent of an object in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. If the <code>Context</code> is null, the object will be global in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. Must be of type <a class="el" href="classu_lua_1_1_lua_mono_behaviour.html" title="MonoBehaviour script which establishes a Lua object framework.">uLua.LuaMonoBehaviour</a>. </p>
 
 <p>Implements <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html#a47e06ba6bfc788b7916fe4029278151c">uLua.IHasLuaIndexer</a>.</p>
 
@@ -343,8 +362,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Used to access the unique Handle of the <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object. </p>
-<p >The unique Handle for a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object is defined as: 'Context.Name'. If an object's context is null, its unique Handle is simply its name. </p>
+<p>Used to access the unique Handle of a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object.</p>
+<p >The unique <code>Handle</code> of a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object is defined as: <code>Context.Name</code>. If an object's context is null, its unique handle is simply its name. </p>
 
 <p>Implements <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html#a360e65110df1a93b442d1b4c1842b1b5">uLua.IHasLuaIndexer</a>.</p>
 
@@ -370,8 +389,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Used to determine if an object has been exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. </p>
-<p >An object may only be exposed by using the <a class="el" href="classu_lua_1_1_lua_mono_behaviour.html#a14c289a707a80490eb155d0deded7c48" title="Used to raise a flag when an object is exposed to Lua.">Expose()</a> method. </p>
+<p>Used to track if an object has been exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>.</p>
+<p >Objects may be marked as exposed by calling the <code><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html#a14c289a707a80490eb155d0deded7c48" title="Used to raise a flag when an object is exposed to Lua.">Expose()</a></code> method. </p>
 
 <p>Implements <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html#aa81522f37d9761cccb2ec20ad7b9784d">uLua.IHasLuaIndexer</a>.</p>
 
@@ -397,8 +416,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Used to access the name of an object. </p>
-<p >The name of an object cannot be changed. </p>
+<p>Used to access the name of an object.</p>
+<p >The name of an object cannot be changed after it has been exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. </p>
 
 <p>Implements <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html#a7ece9b1f574042f4a0e2f997a893f93d">uLua.IHasLuaIndexer</a>.</p>
 
@@ -424,8 +443,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> value indexed by the DynValue Key. </p>
-<p >This indexer may be used in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> or within C#. </p>
+<p>Returns a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> value indexed by the DynValue Key.</p>
+<p >This indexer may be used in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> or within C# to access any member of a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object. </p>
 
 <p>Implements <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html#a034ed943f2a4fee3fbb0a6dbab61f5d2">uLua.IHasLuaIndexer</a>.</p>
 
@@ -451,8 +470,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> value indexed by the string key. </p>
-<p >This indexer may be used in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> or within C#. </p>
+<p>Returns a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> value indexed by the string key.</p>
+<p >This indexer may be used in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> or within C# to access any member of a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object. </p>
 
 <p>Implements <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html#a205fafe2263a36b7172f312694d5288b">uLua.IHasLuaIndexer</a>.</p>
 
