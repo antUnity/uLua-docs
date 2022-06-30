@@ -25,35 +25,37 @@
 var NAVTREE =
 [
   [ "uLua", "index.html", [
-    [ "uLua", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html", [
-      [ "Dependencies", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md1", null ],
-      [ "Documentation", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md2", null ],
-      [ "Usage Tutorial", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md3", [
-        [ "1. The API class", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md4", null ],
-        [ "2. Executing Lua scripts", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md5", [
-          [ "2.1. Using the Scene Script", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md6", null ],
-          [ "2.2. Loading the Scene Script Externally", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md7", null ],
-          [ "2.3. External User Scripts", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md8", null ],
-          [ "2.4. Manual Script Execution", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md9", null ]
-        ] ],
-        [ "3. Using the Event Handling System", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md10", [
-          [ "3.1. Invoking Game Events", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md11", null ],
-          [ "3.2. Registering Event Handlers", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md12", null ],
-          [ "3.3. Removing Event Handlers", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md13", null ],
-          [ "3.4. The SceneLoaded Event", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md14", null ]
-        ] ],
-        [ "4. Exposing Objects to Lua", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md15", [
-          [ "4.1. The ExposedMonoBehaviour class", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md16", null ],
-          [ "4.2. The ExposedClass class", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md17", null ],
-          [ "4.3. Lua Object Context", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md18", null ],
-          [ "4.4. Using Object Callbacks", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md19", null ],
-          [ "4.5. Hiding Class Members from Lua", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md20", null ]
-        ] ],
-        [ "5. Further Support", "md__c___users__aris__documents__projects__titania__unity__assets__plugins_u_lua__r_e_a_d_m_e.html#autotoc_md21", null ]
-      ] ]
+    [ "Dependencies", "index.html#autotoc_md1", null ],
+    [ "Documentation", "index.html#autotoc_md2", null ],
+    [ "Usage Tutorial", "index.html#autotoc_md3", [
+      [ "1. The API class", "index.html#autotoc_md4", null ],
+      [ "2. Executing Lua scripts", "index.html#autotoc_md5", [
+        [ "2.1. Using the Scene Script", "index.html#autotoc_md6", null ],
+        [ "2.2. Loading the Scene Script Externally", "index.html#autotoc_md7", null ],
+        [ "2.3. External User Scripts", "index.html#autotoc_md8", null ],
+        [ "2.4. Manual Script Execution", "index.html#autotoc_md9", null ]
+      ] ],
+      [ "3. Using the Event Handling System", "index.html#autotoc_md10", [
+        [ "3.1. Invoking Events", "index.html#autotoc_md11", null ],
+        [ "3.2. Registering Event Handlers", "index.html#autotoc_md12", null ],
+        [ "3.3. Removing Event Handlers", "index.html#autotoc_md13", null ],
+        [ "3.4. The SceneLoaded Event", "index.html#autotoc_md14", null ]
+      ] ],
+      [ "4. Exposing Objects to Lua", "index.html#autotoc_md15", [
+        [ "4.1. The ExposedMonoBehaviour script", "index.html#autotoc_md16", null ],
+        [ "4.2. The ExposedClass script", "index.html#autotoc_md17", null ],
+        [ "4.3. Object Context", "index.html#autotoc_md18", null ],
+        [ "4.4. Using Object Callback Functions", "index.html#autotoc_md19", null ],
+        [ "4.5. Hiding Object Members in Lua", "index.html#autotoc_md20", null ]
+      ] ],
+      [ "5. Further Support", "index.html#autotoc_md21", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
+      ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

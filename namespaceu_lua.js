@@ -7,5 +7,6 @@ var namespaceu_lua =
     [ "IndexedUserDataDescriptor", "classu_lua_1_1_indexed_user_data_descriptor.html", null ],
     [ "Lua", "classu_lua_1_1_lua.html", "classu_lua_1_1_lua" ],
     [ "LuaClass", "classu_lua_1_1_lua_class.html", "classu_lua_1_1_lua_class" ],
-    [ "LuaMonoBehaviour", "classu_lua_1_1_lua_mono_behaviour.html", "classu_lua_1_1_lua_mono_behaviour" ]
+    [ "LuaMonoBehaviour", "classu_lua_1_1_lua_mono_behaviour.html", "classu_lua_1_1_lua_mono_behaviour" ],
+    [ "ExposeOn", "namespaceu_lua.html#adb212deb696a0839cdd04ea9eec4d5f4", null ]
 ];

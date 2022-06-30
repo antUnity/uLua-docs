@@ -28,7 +28,7 @@
   <td id="projectalign">
    <div id="projectname">uLua<span id="projectnumber">&#160;v1.0.0</span>
    </div>
-   <div id="projectbrief">A Game API Framework for Unity</div>
+   <div id="projectbrief">A Game API Framework for Unity.</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('classu_lua_1_1_lua_mono_behaviour.html
 </div><!--header-->
 <div class="contents">
 
-<p>MonoBehaviour script which establishes a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object framework. 
+<p>MonoBehaviour script which establishes a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object framework. For internal use. 
  <a href="classu_lua_1_1_lua_mono_behaviour.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -155,8 +155,8 @@ Properties</h2></td></tr>
 <tr class="separator:a7ece9b1f574042f4a0e2f997a893f93d inherit properties_interfaceu_lua_1_1_i_has_lua_indexer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >MonoBehaviour script which establishes a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object framework.</p>
-<p >Instances of this class can be exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> by calling <code>uLua.API.Expose()</code>. All public members of derived classes will be exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. Prior to exposing an object of type <a class="el" href="classu_lua_1_1_lua_mono_behaviour.html" title="MonoBehaviour script which establishes a Lua object framework.">uLua.LuaMonoBehaviour</a>, the relevant type <code>T</code> must be registered to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> by calling <code>API.RegisterIndexedType()</code>. <br  />
+<div class="textblock"><p >MonoBehaviour script which establishes a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> object framework. For internal use.</p>
+<p >Instances of this class can be exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> by calling <code>uLua.API.Expose()</code>. All public members of derived classes will be exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. Prior to exposing an object of type <a class="el" href="classu_lua_1_1_lua_mono_behaviour.html" title="MonoBehaviour script which establishes a Lua object framework. For internal use.">uLua.LuaMonoBehaviour</a>, the relevant type <code>T</code> must be registered to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> by calling <code>API.RegisterIndexedType()</code>. <br  />
  </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a14c289a707a80490eb155d0deded7c48" name="a14c289a707a80490eb155d0deded7c48"></a>
@@ -336,7 +336,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Used to access/set the context of an object.</p>
-<p >The <code>Context</code> object represents the parent of an object in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. If the <code>Context</code> is null, the object will be global in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. Must be of type <a class="el" href="classu_lua_1_1_lua_mono_behaviour.html" title="MonoBehaviour script which establishes a Lua object framework.">uLua.LuaMonoBehaviour</a>. </p>
+<p >The <code>Context</code> object represents the parent of an object in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. If the <code>Context</code> is null, the object will be global in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. Must be of type <a class="el" href="classu_lua_1_1_lua_mono_behaviour.html" title="MonoBehaviour script which establishes a Lua object framework. For internal use.">uLua.LuaMonoBehaviour</a>. </p>
 
 <p>Implements <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html#a47e06ba6bfc788b7916fe4029278151c">uLua.IHasLuaIndexer</a>.</p>
 
