@@ -7,5 +7,5 @@ var searchData=
   ['remove_4',['Remove',['../classu_lua_1_1_lua.html#a983eba45784807d4769ca50cdd444c27',1,'uLua::Lua']]],
   ['removeeventhandlers_5',['RemoveEventHandlers',['../classu_lua_1_1_a_p_i.html#a34704d69a595a664270801e1d2b25544',1,'uLua::API']]],
   ['removeuserscript_6',['RemoveUserScript',['../classu_lua_1_1_a_p_i.html#a701baa0ff512b4f6273cd8b4f3672c73',1,'uLua::API']]],
-  ['resourcedirectory_7',['ResourceDirectory',['../classu_lua_1_1_a_p_i.html#ad22da9da01b5682c7e397cd837b632dc',1,'uLua::API']]]
+  ['resourcepath_7',['ResourcePath',['../classu_lua_1_1_a_p_i.html#a3c6077b90221d45369c706712e80c2c0',1,'uLua::API']]]
 ];

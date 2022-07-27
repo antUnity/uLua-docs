@@ -30,9 +30,9 @@ var NAVTREE =
     [ "Usage Tutorial", "index.html#autotoc_md3", [
       [ "1. The API class", "index.html#autotoc_md4", null ],
       [ "2. Executing Lua scripts", "index.html#autotoc_md5", [
-        [ "2.1. Using the Scene Script", "index.html#autotoc_md6", null ],
-        [ "2.2. Loading the Scene Script Externally", "index.html#autotoc_md7", null ],
-        [ "2.3. External User Scripts", "index.html#autotoc_md8", null ],
+        [ "2.1. Loading a Scene Script", "index.html#autotoc_md6", null ],
+        [ "2.2. Loading a Scene Script Externally", "index.html#autotoc_md7", null ],
+        [ "2.3. User Scripts", "index.html#autotoc_md8", null ],
         [ "2.4. Manual Script Execution", "index.html#autotoc_md9", null ]
       ] ],
       [ "3. Using the Event Handling System", "index.html#autotoc_md10", [
@@ -44,11 +44,13 @@ var NAVTREE =
       [ "4. Exposing Objects to Lua", "index.html#autotoc_md15", [
         [ "4.1. The ExposedMonoBehaviour script", "index.html#autotoc_md16", null ],
         [ "4.2. The ExposedClass script", "index.html#autotoc_md17", null ],
-        [ "4.3. Object Context", "index.html#autotoc_md18", null ],
+        [ "4.3. Using the Object Context", "index.html#autotoc_md18", null ],
         [ "4.4. Using Object Callback Functions", "index.html#autotoc_md19", null ],
-        [ "4.5. Hiding Object Members in Lua", "index.html#autotoc_md20", null ]
+        [ "4.5. Using Object Resource Scripts", "index.html#autotoc_md20", null ],
+        [ "4.6. Hiding Object Members in Lua", "index.html#autotoc_md21", null ]
       ] ],
-      [ "5. Further Support", "index.html#autotoc_md21", null ]
+      [ "5. Saving and Loading Object Data", "index.html#autotoc_md22", null ],
+      [ "6. Further Support", "index.html#autotoc_md23", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],

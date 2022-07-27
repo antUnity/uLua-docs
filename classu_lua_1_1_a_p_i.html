@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="uLua-160x160.png"/></td>
   <td id="projectalign">
-   <div id="projectname">uLua<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">uLua<span id="projectnumber">&#160;v1.1.0</span>
    </div>
-   <div id="projectbrief">A Game API Framework for Unity.</div>
+   <div id="projectbrief">A Lua API Framework for Unity.</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('classu_lua_1_1_a_p_i.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
-<p>This script sets up a Game <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up a Game API framework to your Unity scene.">API</a> framework to your Unity scene. 
+<p>This script sets up the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">API</a> framework to your Unity scene. 
  <a href="classu_lua_1_1_a_p_i.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -122,6 +122,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae85b13a4101bcfca3c7ad3e552d5e7cf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#ae85b13a4101bcfca3c7ad3e552d5e7cf">Invoke</a> (string Event, params object[] args)</td></tr>
 <tr class="memdesc:ae85b13a4101bcfca3c7ad3e552d5e7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes a game event. <a href="classu_lua_1_1_a_p_i.html#ae85b13a4101bcfca3c7ad3e552d5e7cf">More...</a><br /></td></tr>
 <tr class="separator:ae85b13a4101bcfca3c7ad3e552d5e7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d362a6db6d3e03ce35e85eada11c8bc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a2d362a6db6d3e03ce35e85eada11c8bc">LoadSavedData</a> (<a class="el" href="classu_lua_1_1_lua_mono_behaviour.html">LuaMonoBehaviour</a> Object, string Index=&quot;SaveData&quot;)</td></tr>
+<tr class="memdesc:a2d362a6db6d3e03ce35e85eada11c8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads table data saved for the specified object. <a href="classu_lua_1_1_a_p_i.html#a2d362a6db6d3e03ce35e85eada11c8bc">More...</a><br /></td></tr>
+<tr class="separator:a2d362a6db6d3e03ce35e85eada11c8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54e04f2dc4e28c911fe96e68a00d8537"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a54e04f2dc4e28c911fe96e68a00d8537">RegisterEventHandler</a> (string Event, string HandlerName, <a class="el" href="classu_lua_1_1_lua_mono_behaviour.html">LuaMonoBehaviour</a> Context=null)</td></tr>
 <tr class="memdesc:a54e04f2dc4e28c911fe96e68a00d8537"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an event handler to be called when an event is invoked. <a href="classu_lua_1_1_a_p_i.html#a54e04f2dc4e28c911fe96e68a00d8537">More...</a><br /></td></tr>
 <tr class="separator:a54e04f2dc4e28c911fe96e68a00d8537"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +137,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5cb9775ed28e5b25e1754f0424669425"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a5cb9775ed28e5b25e1754f0424669425">RegisterType&lt; T &gt;</a> ()</td></tr>
 <tr class="memdesc:a5cb9775ed28e5b25e1754f0424669425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a type to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. <a href="classu_lua_1_1_a_p_i.html#a5cb9775ed28e5b25e1754f0424669425">More...</a><br /></td></tr>
 <tr class="separator:a5cb9775ed28e5b25e1754f0424669425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4feae7dfb393e8a11f907a96c25ef14b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a4feae7dfb393e8a11f907a96c25ef14b">SaveData</a> (<a class="el" href="classu_lua_1_1_lua_mono_behaviour.html">LuaMonoBehaviour</a> Object, string Index=&quot;SaveData&quot;)</td></tr>
+<tr class="memdesc:a4feae7dfb393e8a11f907a96c25ef14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves table data from the specified object. <a href="classu_lua_1_1_a_p_i.html#a4feae7dfb393e8a11f907a96c25ef14b">More...</a><br /></td></tr>
+<tr class="separator:a4feae7dfb393e8a11f907a96c25ef14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -141,18 +147,26 @@ Static Public Attributes</h2></td></tr>
 static string&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalDirectory</b> = &quot;&quot;</td></tr>
 <tr class="memdesc:a7bb50177d7009eae7f2a8d5c9d0046db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directory for external <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> scripts. The path is determined at run-time.<br /></td></tr>
 <tr class="separator:a7bb50177d7009eae7f2a8d5c9d0046db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad22da9da01b5682c7e397cd837b632dc"><td class="memItemLeft" align="right" valign="top"><a id="ad22da9da01b5682c7e397cd837b632dc" name="ad22da9da01b5682c7e397cd837b632dc"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceDirectory</b> = &quot;&quot;</td></tr>
-<tr class="memdesc:ad22da9da01b5682c7e397cd837b632dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directory for <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> scripts within the Resources folder.<br /></td></tr>
-<tr class="separator:ad22da9da01b5682c7e397cd837b632dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c6077b90221d45369c706712e80c2c0"><td class="memItemLeft" align="right" valign="top"><a id="a3c6077b90221d45369c706712e80c2c0" name="a3c6077b90221d45369c706712e80c2c0"></a>
+static string&#160;</td><td class="memItemRight" valign="bottom"><b>ResourcePath</b> = &quot;&quot;</td></tr>
+<tr class="memdesc:a3c6077b90221d45369c706712e80c2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path for <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> scripts within the Resources folder.<br /></td></tr>
+<tr class="separator:a3c6077b90221d45369c706712e80c2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11ac18faabb9320023906bd440fdae3"><td class="memItemLeft" align="right" valign="top"><a id="ae11ac18faabb9320023906bd440fdae3" name="ae11ac18faabb9320023906bd440fdae3"></a>
+static string&#160;</td><td class="memItemRight" valign="bottom"><b>SaveDataPath</b> = &quot;&quot;</td></tr>
+<tr class="memdesc:ae11ac18faabb9320023906bd440fdae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path for user save data under the external directory.<br /></td></tr>
+<tr class="separator:ae11ac18faabb9320023906bd440fdae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aa0f31db51b713753beb90492c12bde"><td class="memItemLeft" align="right" valign="top"><a id="a7aa0f31db51b713753beb90492c12bde" name="a7aa0f31db51b713753beb90492c12bde"></a>
+static string&#160;</td><td class="memItemRight" valign="bottom"><b>UserScriptsPath</b> = &quot;&quot;</td></tr>
+<tr class="memdesc:a7aa0f31db51b713753beb90492c12bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path for user scripts under the external directory.<br /></td></tr>
+<tr class="separator:a7aa0f31db51b713753beb90492c12bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ca842887a9a8735030c7ec2c7696cdf"><td class="memItemLeft" align="right" valign="top"><a id="a9ca842887a9a8735030c7ec2c7696cdf" name="a9ca842887a9a8735030c7ec2c7696cdf"></a>
 static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsExtension</b> = &quot;&quot;</td></tr>
 <tr class="memdesc:a9ca842887a9a8735030c7ec2c7696cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">File extension for all external <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> scripts.<br /></td></tr>
 <tr class="separator:a9ca842887a9a8735030c7ec2c7696cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >This script sets up a Game <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up a Game API framework to your Unity scene.">API</a> framework to your Unity scene.</p>
-<p >Includes methods to execute <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> scripts, expose game objects to the Game <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up a Game API framework to your Unity scene.">API</a>, and invoke events. Inherits from MonoBehaviour. Intended use is to add to an object in the scene and set up for use.</p>
+<div class="textblock"><p >This script sets up the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">API</a> framework to your Unity scene.</p>
+<p >Includes methods to execute <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> scripts, expose game objects to the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">API</a>, and invoke events. Inherits from MonoBehaviour. Intended use is to add to an object in the scene and set up for use.</p>
 <p >This script invokes the <code>SceneLoaded</code> event when the scene is loaded. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aca720a85917454616563e0d87df2f3c1" name="aca720a85917454616563e0d87df2f3c1"></a>
@@ -208,7 +222,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 </div><div class="memdoc">
 
 <p>Clears the user scripts list.</p>
-<p >This method has no effect on the Game <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up a Game API framework to your Unity scene.">API</a> if the user scripts have already been executed. </p>
+<p >This method has no effect on the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">API</a> if the user scripts have already been executed. </p>
 
 </div>
 </div>
@@ -351,7 +365,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 </div><div class="memdoc">
 
 <p>Exposes an object to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>.</p>
-<p >Called internally by <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html#a661a161cd4e92161756156f792e33863" title="Exposes the game object to Lua if ExposeOn is set to &#39;Start&#39;. The Context object must be set prior to...">uLua.ExposedMonoBehaviour.Start()</a>. Can be called manually at an earlier point or for objects which have <code>ExposeOnStart</code> disabled. </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Called internally by <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html#a661a161cd4e92161756156f792e33863" title="Exposes the game object to Lua if ExposeOn is set to &#39;Start&#39;.">uLua.ExposedMonoBehaviour.Start()</a>. Can be called manually at an earlier point or for objects which have <code>ExposeOnStart</code> disabled. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Object</td><td>The object to be exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. The generic type <code>T</code> must implement the <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html" title="Interface used to implement a fully indexed Lua object.">IHasLuaIndexer</a> interface. </td></tr>
     <tr><td class="paramname">Context</td><td>The <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> context of the object. If null, the object will be exposed as a global. </td></tr>
@@ -415,6 +429,51 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 
 </div>
 </div>
+<a id="a2d362a6db6d3e03ce35e85eada11c8bc" name="a2d362a6db6d3e03ce35e85eada11c8bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d362a6db6d3e03ce35e85eada11c8bc">&#9670;&nbsp;</a></span>LoadSavedData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void uLua.API.LoadSavedData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html">LuaMonoBehaviour</a>&#160;</td>
+          <td class="paramname"><em>Object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>Index</em> = <code>&quot;SaveData&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads table data saved for the specified object.</p>
+<p >Saved data will be loaded from the <code>SaveDataPath</code> under the external directory. This method is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> as a global and may be called from a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> script or within C#. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Object</td><td>The object of which the saved data will be loaded. </td></tr>
+    <tr><td class="paramname">Index</td><td>(Optional) The index of <code>Object</code> which contains the table data to be saved. Default value is "SaveData". </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a54e04f2dc4e28c911fe96e68a00d8537" name="a54e04f2dc4e28c911fe96e68a00d8537"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54e04f2dc4e28c911fe96e68a00d8537">&#9670;&nbsp;</a></span>RegisterEventHandler()</h2>
 
@@ -456,7 +515,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 </div><div class="memdoc">
 
 <p>Registers an event handler to be called when an event is invoked.</p>
-<p >This method is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> as a global and may be called from a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> script. </p><dl class="params"><dt>Parameters</dt><dd>
+<p >This method is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> as a global and may be called from a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> script or within C#. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Event</td><td>The name of the event. </td></tr>
     <tr><td class="paramname">HandlerName</td><td>The name of the event handler function. </td></tr>
@@ -528,7 +587,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 </div><div class="memdoc">
 
 <p>Registers a type to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>.</p>
-<p >Any C# or Unity type may be registered to use within the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up a Game API framework to your Unity scene.">API</a>. Use with caution. </p>
+<p >Any C# or Unity type may be registered to use within the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">API</a>. Use with caution. </p>
 
 </div>
 </div>
@@ -592,6 +651,51 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 
 <p>Removes the specified script from the user scripts.</p>
 <p >User scripts are executed from the specified path in the <code>ExternalDirectory</code> after the scene is loaded. </p>
+
+</div>
+</div>
+<a id="a4feae7dfb393e8a11f907a96c25ef14b" name="a4feae7dfb393e8a11f907a96c25ef14b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4feae7dfb393e8a11f907a96c25ef14b">&#9670;&nbsp;</a></span>SaveData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void uLua.API.SaveData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classu_lua_1_1_lua_mono_behaviour.html">LuaMonoBehaviour</a>&#160;</td>
+          <td class="paramname"><em>Object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>Index</em> = <code>&quot;SaveData&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saves table data from the specified object.</p>
+<p >Data will be saved to the <code>SaveDataPath</code> under the external directory. This method is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> as a global and may be called from a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> script or within C#. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Object</td><td>The object for which the data will be saved. </td></tr>
+    <tr><td class="paramname">Index</td><td>(Optional) The index of <code>Object</code> which contains the table data to be saved. Default value is "SaveData". </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
