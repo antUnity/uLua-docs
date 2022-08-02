@@ -39,7 +39,7 @@ var NAVTREE =
         [ "3.1. Invoking Events", "index.html#autotoc_md11", null ],
         [ "3.2. Registering Event Handlers", "index.html#autotoc_md12", null ],
         [ "3.3. Removing Event Handlers", "index.html#autotoc_md13", null ],
-        [ "3.4. The SceneLoaded Event", "index.html#autotoc_md14", null ]
+        [ "3.4. The SceneLoaded / SceneUnloaded Events", "index.html#autotoc_md14", null ]
       ] ],
       [ "4. Exposing Objects to Lua", "index.html#autotoc_md15", [
         [ "4.1. The ExposedMonoBehaviour script", "index.html#autotoc_md16", null ],
