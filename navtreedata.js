@@ -50,7 +50,8 @@ var NAVTREE =
         [ "4.6. Hiding Object Members in Lua", "index.html#autotoc_md21", null ]
       ] ],
       [ "5. Saving and Loading Object Data", "index.html#autotoc_md22", null ],
-      [ "6. Further Support", "index.html#autotoc_md23", null ]
+      [ "6. Message, warning, and error logging", "index.html#autotoc_md23", null ],
+      [ "7. Further Support", "index.html#autotoc_md24", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],

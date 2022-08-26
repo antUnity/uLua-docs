@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="uLua-160x160.png"/></td>
   <td id="projectalign">
-   <div id="projectname">uLua<span id="projectnumber">&#160;v1.1.1</span>
+   <div id="projectname">uLua<span id="projectnumber">&#160;v1.1.2</span>
    </div>
    <div id="projectbrief">A Lua API Framework for Unity.</div>
   </td>
@@ -179,8 +179,10 @@ Usage Tutorial</h1>
 3.1. Invoking Events</h3>
 <p >Events are invoked by the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class. The related method is static, which means it can be executed from anywhere in your project. For instance, to invoke an event named <code>PlayerHealthChanged</code> you can use the following command anywhere in your scene: </p><div class="fragment"><div class="line">uLua.API.Invoke(&quot;PlayerHealthChanged&quot;);</div>
 </div><!-- fragment --><p >When invoking an event, you may pass any arguments as optional parameters following the event name. For instance:</p>
-<div class="fragment"><div class="line">uLua.API.Invoke(&quot;MyEventWithParameters&quot;, 5, 1, &quot;text&quot;)</div>
-</div><!-- fragment --><p >You can use any name you like when invoking your game events, however, the same event name must be used in the event handler registration.</p>
+<div class="fragment"><div class="line">uLua.API.Invoke(&quot;MyEventWithParameters&quot;, 5, 1, &quot;text&quot;);</div>
+</div><!-- fragment --><p >You may also invoke an event in a Lua script with the same syntax:</p>
+<div class="fragment"><div class="line">Invoke(&quot;MyEventWithParameters&quot;, 5, 1, &quot;text&quot;);</div>
+</div><!-- fragment --><p >You can name your game events whatever you like, however, the same event name must be used in the event handler registration.</p>
 <h3><a class="anchor" id="autotoc_md12"></a>
 3.2. Registering Event Handlers</h3>
 <p >Event handlers are registered and removed by the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class. The related methods are static, which means they can be executed from anywhere in your project. Until an event handler has been registered, the <a class="el" href="classu_lua_1_1_a_p_i.html#ae85b13a4101bcfca3c7ad3e552d5e7cf" title="Invokes a game event.">uLua.API.Invoke()</a> command will have no effect.</p>
@@ -209,7 +211,7 @@ Usage Tutorial</h1>
 <p ><em>Note: Again, keep in mind that event handlers are not exclusively globals. Event handlers for a specific object are removed by using an optional third argument. For the sake of simplicity, we use global event handlers in this step of the tutorial.</em></p>
 <h3><a class="anchor" id="autotoc_md14"></a>
 3.4. The SceneLoaded / SceneUnloaded Events</h3>
-<p >The <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class invokes two events by default, called <code>SceneLoaded</code> and <code>SceneUnloaded</code>. The <code>SceneLoaded</code> event is invoked after the scene script is executed, and before any user scripts are executed. The <code>SceneUnloaded</code> event is invoked when a scene is unloaded. You may register an event handler for these events as you would for any other event. For instance, you could add the following event handlers to set up your scene:</p>
+<p >The <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class invokes a few events by default, including the <code>SceneLoaded</code> and <code>SceneUnloaded</code> events. The <code>SceneLoaded</code> event is invoked after the scene script is executed, and before any user scripts are executed. The <code>SceneUnloaded</code> event is invoked when a scene is unloaded. You may register an event handler for these events as you would for any other event. For instance, you could add the following event handlers to set up your scene:</p>
 <p ><em><b>MyGameScene.lua</b></em> </p><div class="fragment"><div class="line">function OnPlayerHealthChanged()</div>
 <div class="line">    -- Do stuff</div>
 <div class="line">end</div>
@@ -582,7 +584,27 @@ Usage Tutorial</h1>
 <div class="line">end</div>
 </div><!-- fragment --><p >Keep in mind that in both cases the <code>MyPlayer.SaveData</code> table always has to be updated with the current values of X and Y before calling the <code>SaveData()</code> method. The Lua callback <code>OnExit</code> would be a suitable place to do this in both cases.</p>
 <h2><a class="anchor" id="autotoc_md23"></a>
-6. Further Support</h2>
+6. Message, warning, and error logging</h2>
+<p >You may use the following commands for message logging and error reporting in Lua:</p>
+<div class="fragment"><div class="line">print(&quot;Hello World!&quot;);</div>
+<div class="line">LogWarning(&quot;Hello World!&quot;);</div>
+<div class="line">LogError(&quot;Hello World!&quot;);</div>
+</div><!-- fragment --><p >These commands are linked to Unity's corresponding <code>Debug.Log()</code>, <code>Debug.LogWarning()</code>, and <code>Debug.LogError()</code>, which means that any messages printed in Lua will also be printed to the console in the Unity editor.</p>
+<p >Finally, these commands trigger the following events in Lua:</p>
+<div class="fragment"><div class="line">LuaMessageLogged</div>
+<div class="line">LuaWarningLogged</div>
+<div class="line">LuaErrorLogged</div>
+</div><!-- fragment --><p >The first parameter passed in an event handler for these events contains the string that was logged. For instance:</p>
+<div class="fragment"><div class="line">function OnLuaMessageLogged(Text)</div>
+<div class="line">    -- &#39;Text&#39; contains the string &quot;Hello World!&quot;</div>
+<div class="line">    -- Do stuff</div>
+<div class="line">end</div>
+<div class="line"> </div>
+<div class="line">RegisterEventHandler(&quot;LuaMesageLogged&quot;, &quot;OnLuaMessageLogged&quot;);</div>
+<div class="line"> </div>
+<div class="line">print(&quot;Hello World!&quot;);</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md24"></a>
+7. Further Support</h2>
 <p >This covers a large portion of the features in uLua! I hope that this tutorial together with the documentation are enough to get you started on your API development. However, for any further questions do not hesitate to contact <a href="#" onclick="location.href='mai'+'lto:'+'sup'+'po'+'rt@'+'an'+'tso'+'ft'+'war'+'e.'+'co.'+'uk'; return false;">suppo<span class="obfuscator">.nosp@m.</span>rt@a<span class="obfuscator">.nosp@m.</span>ntsof<span class="obfuscator">.nosp@m.</span>twar<span class="obfuscator">.nosp@m.</span>e.co.<span class="obfuscator">.nosp@m.</span>uk</a>.</p>
 <p >I have put together a demo paddle game project which utilises <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a>, and which comes with its own documentation of the API and source code. You may find it <a href="https://bit.ly/PaddleDemo">here</a>.</p>
 <p >This project is the result of many hours of hard work. Please support me by leaving a review on the asset store! Also, follow my <a href="https://twitter.com/_ANTSoftware" title="@_ANTSoftware">Twitter</a>! </p>
