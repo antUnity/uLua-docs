@@ -1,5 +1,6 @@
 var namespaceu_lua =
 [
+    [ "AllowLuaOverrideAttribute", "classu_lua_1_1_allow_lua_override_attribute.html", null ],
     [ "API", "classu_lua_1_1_a_p_i.html", "classu_lua_1_1_a_p_i" ],
     [ "ExposedClass", "classu_lua_1_1_exposed_class.html", "classu_lua_1_1_exposed_class" ],
     [ "ExposedMonoBehaviour", "classu_lua_1_1_exposed_mono_behaviour.html", "classu_lua_1_1_exposed_mono_behaviour" ],

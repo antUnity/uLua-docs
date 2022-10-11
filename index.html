@@ -24,11 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="uLua-160x160.png"/></td>
   <td id="projectalign">
-   <div id="projectname">uLua<span id="projectnumber">&#160;v1.1.2</span>
+   <div id="projectname">uLua<span id="projectnumber">&#160;v1.2.0</span>
    </div>
-   <div id="projectbrief">A Lua API Framework for Unity.</div>
+   <div id="projectbrief">A Lua Modding Framework for Unity.</div>
   </td>
  </tr>
  </tbody>
@@ -87,13 +86,14 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title"><a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_C__Users_Aris_Documents_Projects_Titania_uTitania_Assets_Plugins_uLua_README"></a> <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> is a Lua API framework for Unity. It aims to streamline the development of an API for your Unity Project using Lua.</p>
-<p ><a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> wraps around MoonSharp and provides an object oriented Lua API framework. It works by setting up an application-wide Lua context and exposing game objects to it. Objects exposed to the API can then be accessed in Lua, allowing users modify your game by executing Lua scripts at runtime.</p>
-<p ><a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> implements the following features:</p><ul>
-<li>Script execution framework which allows Lua scripts to be executed from the Resources folder or an external directory.</li>
-<li>Event handling system which allows you to invoke events in C# and handle them in Lua.</li>
-<li>Base classes which expose your game objects and data structures to Lua.</li>
-<li>Callback function system for your API objects.</li>
+<div class="textblock"><p ><a class="anchor" id="md_C__Users_Aris_Documents_Projects_Titania_uTitania_Assets_Plugins_uLua_README"></a> <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> is a Lua Modding framework for Unity. It enables the development of a Lua API which may be used to mod your Unity Project.</p>
+<p ><a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> wraps around MoonSharp and provides an object oriented Lua Modding framework. It works by setting up an application-wide Lua context and exposing game objects to it. Objects exposed to the Lua context can then be accessed in Lua, allowing users to modify your game at runtime through the use of Lua scripts.</p>
+<p ><a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> includes the following features:</p><ul>
+<li>Lua script execution from the Resources folder or an external directory.</li>
+<li>Event system which allows events to be invoked in C# and handled in Lua.</li>
+<li>Base classes to expose your game objects and data structures to Lua.</li>
+<li>Callback system for your Lua objects.</li>
+<li>Ability to override C# methods in Lua.</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Dependencies</h1>
@@ -173,8 +173,8 @@ Usage Tutorial</h1>
 <p ><a class="el" href="classu_lua_1_1_a_p_i.html#a9a5ef26647eabe286c7903ce1be3b68c" title="Executes a script from the resource directory.">uLua.API.ExecuteFile()</a></p>
 <p >These methods make use of the script execution framework defined by <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a>. This means that you do not need to specify the execution directories when calling these functions. As long as a game object with your <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> settings is set up in your scene, you can execute external or internal Lua scripts by the path to their filename. Check the full documentation for a list of available parameters and more information on how to use these methods.</p>
 <h2><a class="anchor" id="autotoc_md10"></a>
-3. Using the Event Handling System</h2>
-<p >In the previous section we went over the Lua script execution framework of <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a>. Another main feature of <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> is its event handling system. Events are very useful when implementing game behaviour, and <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> allows you to invoke game events and handle them by implementing event handlers in Lua.</p>
+3. Using the Event System</h2>
+<p >In the previous section we went over the Lua script execution framework of <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a>. Another main feature of <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> is its event system. Events are very useful when implementing game behaviour, and <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> allows you to invoke game events and handle them by implementing event handlers in Lua.</p>
 <h3><a class="anchor" id="autotoc_md11"></a>
 3.1. Invoking Events</h3>
 <p >Events are invoked by the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class. The related method is static, which means it can be executed from anywhere in your project. For instance, to invoke an event named <code>PlayerHealthChanged</code> you can use the following command anywhere in your scene: </p><div class="fragment"><div class="line">uLua.API.Invoke(&quot;PlayerHealthChanged&quot;);</div>
@@ -239,11 +239,10 @@ Usage Tutorial</h1>
 <p >As an example, let's assume you want to expose your <code>Player</code> object to Lua. For simplicity, let's say the Player has only one member: its health. You may start by defining a <code>Player</code> script which inherits ExposedMonoBehaviour:</p>
 <p ><em><b>Player.cs</b></em> </p><div class="fragment"><div class="line">using uLua;</div>
 <div class="line"> </div>
-<div class="line">public class Player : ExposedMonoBehaviour&lt;Player&gt; {</div>
+<div class="line">public class Player : ExposedMonoBehaviour {</div>
 <div class="line">    public int Health = 100;</div>
 <div class="line">}</div>
-</div><!-- fragment --><p >Notice the generic type parameter <code>&lt;Player&gt;</code> in the class definition. <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html" title="MonoBehaviour script exposed to Lua. You should use this class as a base for your API game objects.">uLua.ExposedMonoBehaviour</a> takes one generic type parameter. At runtime, the <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html" title="MonoBehaviour script exposed to Lua. You should use this class as a base for your API game objects.">uLua.ExposedMonoBehaviour</a> script uses this type parameter to register that type to Lua.</p>
-<p >You may now attach the <code>Player</code> script to a game object in your scene. As an example let's name that object <code>MyPlayer</code>. The <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html" title="MonoBehaviour script exposed to Lua. You should use this class as a base for your API game objects.">uLua.ExposedMonoBehaviour</a> class will use the game object's name to generate a handle in Lua. This means that a game object named <code>MyPlayer</code> in your Unity Scene will be accessible by the same name in Lua.</p>
+</div><!-- fragment --><p >You may now attach the <code>Player</code> script to a game object in your scene. As an example let's name that object <code>MyPlayer</code>. The <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html" title="MonoBehaviour script exposed to Lua. You should use this class as a base for your API game objects.">uLua.ExposedMonoBehaviour</a> class will use the game object's name to generate a handle in Lua. This means that a game object named <code>MyPlayer</code> in your Unity Scene will be accessible by the same name in Lua.</p>
 <p ><em>Note: Game objects may not include spaces or special characters in their name if they are to be exposed to Lua. Object names must follow Lua naming conventions for variables.</em></p>
 <p >By default, all game objects which contain the <code>Player</code> script will be exposed to the API when the object's <code>Start()</code> method is called. This option may be changed by setting the <code>ExposeOn</code> parameter of <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html" title="MonoBehaviour script exposed to Lua. You should use this class as a base for your API game objects.">uLua.ExposedMonoBehaviour</a> to <code>Awake</code>, or to <code>None</code>, allowing you to expose objects manually by using <a class="el" href="classu_lua_1_1_a_p_i.html#aad4b6cab0c4aac473d9c42aea6902556" title="Exposes an object to Lua.">uLua.API.Expose&lt;T&gt;()</a>.</p>
 <p >The <code>Player</code> script we defined above has a public field named Health. Building on the <em>MyGameScene.lua</em> script from the previous section, the following script shows how the object <code>MyPlayer</code> and its member <code>Health</code> are now accessible in Lua:</p>
@@ -267,7 +266,7 @@ Usage Tutorial</h1>
 <p >To make use of the <code>PlayerHealthChanged</code> event, we can build on the <code>Player</code> class design. In the modification below, we have made the <code>Health</code> variable private and renamed it to <code>_Health</code>. We then implement a public getter property named <code>Health</code>, and a public method named <code>Damage()</code>. The <code>Damage()</code> method changes the value of <code>_Health</code> and invokes the <code>PlayerHealthChanged</code> event.</p>
 <p ><em><b>Player.cs</b></em> </p><div class="fragment"><div class="line">using uLua;</div>
 <div class="line"> </div>
-<div class="line">public class Player : ExposedMonoBehaviour&lt;Player&gt; {</div>
+<div class="line">public class Player : ExposedMonoBehaviour {</div>
 <div class="line">    private int _Health = 100;</div>
 <div class="line"> </div>
 <div class="line">    public void Damage(int Damage) {</div>
@@ -305,7 +304,7 @@ Usage Tutorial</h1>
 <p >As an example, you may use <a class="el" href="classu_lua_1_1_exposed_class.html" title="Class structure exposed to Lua. You should use this class as a base for your API data structures.">uLua.ExposedClass</a> to describe a weapon item in your game. A simple class definition is the following:</p>
 <p ><em><b>Weapon.cs</b></em> </p><div class="fragment"><div class="line">using uLua;</div>
 <div class="line"> </div>
-<div class="line">public class Weapon : ExposedClass&lt;Weapon&gt; {</div>
+<div class="line">public class Weapon : ExposedClass {</div>
 <div class="line">    public int Damage = 0;</div>
 <div class="line"> </div>
 <div class="line">    // Public constructor</div>
@@ -317,7 +316,7 @@ Usage Tutorial</h1>
 <p >Therefore, to expose an instance of <code>Weapon</code> to Lua, all you need to do is instantiate it with the <code>new</code> keyword. In the following example, we instantiate a <code>Weapon</code> named <code>Sword</code> in the <code>Awake()</code> method of the <code>Player</code> script.</p>
 <p ><em><b>Player.cs</b></em> </p><div class="fragment"><div class="line">using uLua;</div>
 <div class="line"> </div>
-<div class="line">public class Player : ExposedMonoBehaviour&lt;Player&gt; {</div>
+<div class="line">public class Player : ExposedMonoBehaviour {</div>
 <div class="line">    private int _Health = 100;</div>
 <div class="line"> </div>
 <div class="line">    public void Damage(int Damage) {</div>
@@ -358,7 +357,7 @@ Usage Tutorial</h1>
 <p >Similarly to <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html" title="MonoBehaviour script exposed to Lua. You should use this class as a base for your API game objects.">uLua.ExposedMonoBehaviour</a>, the class definition given above will expose all <code>Weapon</code> objects to Lua when they are instantiated. This feature may be disabled by setting the optional <code>ExposeOnInit</code> parameter of the <a class="el" href="classu_lua_1_1_exposed_class.html" title="Class structure exposed to Lua. You should use this class as a base for your API data structures.">uLua.ExposedClass</a> constructor to <code>false</code>, allowing you to expose objects manually by using <a class="el" href="classu_lua_1_1_a_p_i.html#aad4b6cab0c4aac473d9c42aea6902556" title="Exposes an object to Lua.">uLua.API.Expose&lt;T&gt;()</a>. An example of a modified constructor is shown below.</p>
 <p ><em><b>Weapon.cs</b></em> </p><div class="fragment"><div class="line">using uLua;</div>
 <div class="line"> </div>
-<div class="line">public class Weapon : ExposedClass&lt;Weapon&gt; {</div>
+<div class="line">public class Weapon : ExposedClass {</div>
 <div class="line">    public int Damage = 0;</div>
 <div class="line"> </div>
 <div class="line">    // Public constructor</div>
@@ -373,7 +372,7 @@ Usage Tutorial</h1>
 <p >As an example, we return to the <code>Player</code> and <code>Weapon</code> scripts from the previous section:</p>
 <p ><em><b>Player.cs</b></em> </p><div class="fragment"><div class="line">using uLua;</div>
 <div class="line"> </div>
-<div class="line">public class Player : ExposedMonoBehaviour&lt;Player&gt; {</div>
+<div class="line">public class Player : ExposedMonoBehaviour {</div>
 <div class="line">    private int _Health = 100;</div>
 <div class="line"> </div>
 <div class="line">    public void Damage(int Damage) {</div>
@@ -424,14 +423,14 @@ Usage Tutorial</h1>
 <p >You may invoke these callbacks as needed in your code, and you may invoke custom callbacks as well. In the following piece of code I have invoked the <code>OnDamageTaken</code> callback in the <code>Player</code> script.</p>
 <p ><em><b>Player.cs</b></em> </p><div class="fragment"><div class="line">using uLua;</div>
 <div class="line"> </div>
-<div class="line">public class Player : ExposedMonoBehaviour&lt;Player&gt; {</div>
+<div class="line">public class Player : ExposedMonoBehaviour {</div>
 <div class="line">    private int _Health = 100;</div>
 <div class="line"> </div>
 <div class="line">    public void Damage(int Damage) {</div>
 <div class="line">        _Health -= Damage;</div>
 <div class="line"> </div>
 <div class="line">        API.Invoke(&quot;PlayerHealthChanged&quot;);</div>
-<div class="line">        Invoke(&quot;OnDamageTaken&quot;);</div>
+<div class="line">        InvokeLua(&quot;OnDamageTaken&quot;);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    public int Health {</div>
@@ -485,7 +484,41 @@ Usage Tutorial</h1>
 <div class="fragment"><div class="line">Resources/Scripts/MyPlayer.lua</div>
 </div><!-- fragment --><p ><em>Note: This is assuming that the <code>UserScriptsPath</code> is set to its default value of "Scripts".</em></p>
 <h3><a class="anchor" id="autotoc_md21"></a>
-4.6. Hiding Object Members in Lua</h3>
+4.6. Overriding and Hiding Members in Lua</h3>
+<h4><a class="anchor" id="autotoc_md22"></a>
+4.6.1. Overriding Methods</h4>
+<p >Allowing users to override a method in a modding framework enables mods to significantly change object behaviour. By default, methods defined in <code>ExposedClass</code> and <code>ExposedMonoBehaviour</code> scripts may not be overridden in Lua.</p>
+<p >To allow a method to be overridden in Lua, you may use the the <code>[AllowLuaOverride]</code> attribute. This is demonstrated below for the <code>Damage()</code> method.</p>
+<p ><em><b>Player.cs</b></em> </p><div class="fragment"><div class="line">using uLua;</div>
+<div class="line"> </div>
+<div class="line">public class Player : ExposedMonoBehaviour {</div>
+<div class="line">    private int _Health = 100;</div>
+<div class="line"> </div>
+<div class="line">    [AllowLuaOverride]</div>
+<div class="line">    public void Damage(int Damage) {</div>
+<div class="line">        _Health -= Damage;</div>
+<div class="line"> </div>
+<div class="line">        API.Invoke(&quot;PlayerHealthChanged&quot;);</div>
+<div class="line">        InvokeLua(&quot;OnDamageTaken&quot;);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    public int Health {</div>
+<div class="line">        get { return _Health; }</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    public void Awake() {</div>
+<div class="line">        Weapon Sword = new Weapon(&quot;Sword&quot;);</div>
+<div class="line">        Weapon PlayerSword = new Weapon(&quot;Sword&quot;, this);</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p >You may now use a Lua script (e.g. the object resource script) to override the implementation of that method.</p>
+<p ><em><b>MyPlayer.lua</b></em> </p><div class="fragment"><div class="line">function MyPlayer:Damage(Value)</div>
+<div class="line">    self.Health = self.Health - Value;</div>
+<div class="line">    </div>
+<div class="line">    Invoke(&quot;PlayerHealthChanged&quot;);</div>
+<div class="line">end</div>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md23"></a>
+4.6.2. Hiding Members</h4>
 <p >Sometimes it is unsafe to expose certain class members to your Lua API. To prevent a public member from being exposed to Lua, you may add the relevant MoonSharp attribute to a class:</p>
 <div class="fragment"><div class="line">[MoonSharpHideMember(&quot;MemberName&quot;)]</div>
 </div><!-- fragment --><p >For instance, if you wanted to hide the <code>Awake()</code> method of the <code>Player</code> script described above, you may use the following syntax:</p>
@@ -493,14 +526,14 @@ Usage Tutorial</h1>
 <div class="line">using uLua;</div>
 <div class="line"> </div>
 <div class="line">[MoonSharpHideMember(&quot;Awake&quot;)]</div>
-<div class="line">public class Player : ExposedMonoBehaviour&lt;Player&gt; {</div>
+<div class="line">public class Player : ExposedMonoBehaviour {</div>
 <div class="line">    private int _Health = 100;</div>
 <div class="line"> </div>
 <div class="line">    public void Damage(int Damage) {</div>
 <div class="line">        _Health -= Damage;</div>
 <div class="line"> </div>
 <div class="line">        API.Invoke(&quot;PlayerHealthChanged&quot;);</div>
-<div class="line">        Invoke(&quot;OnDamageTaken&quot;);</div>
+<div class="line">        InvokeLua(&quot;OnDamageTaken&quot;);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    public int Health {</div>
@@ -513,7 +546,7 @@ Usage Tutorial</h1>
 <div class="line">    }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p >This would prevent the <code>Awake()</code> method from being called within the Lua API. This could also be achieved by defining the <code>Awake()</code> method as <code>protected</code> or <code>private</code>. However, that is not an option in cases where a specific member must be public so that other scripts in your project can have access to it.</p>
-<h2><a class="anchor" id="autotoc_md22"></a>
+<h2><a class="anchor" id="autotoc_md24"></a>
 5. Saving and Loading Object Data</h2>
 <p >The <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> script allows you to save variables of a Lua API object into a file which can then be loaded again at runtime. This feature may be used to save settings or other information and load it seamlessly back into your API in-between playthroughs.</p>
 <p >To save data and load for a Lua object, you can use the following commands anywhere in your scene: </p><div class="fragment"><div class="line">uLua.API.SaveData();</div>
@@ -540,14 +573,14 @@ Usage Tutorial</h1>
 <p >You can then call the the saving/loading methods as required in your code. For instance, you may use Unity's <code>Start()</code> and <code>OnDestroy()</code> methods. Returning to the previous example of a <code>Player</code> script:</p>
 <p ><em><b>Player.cs</b></em> </p><div class="fragment"><div class="line">using uLua;</div>
 <div class="line"> </div>
-<div class="line">public class Player : ExposedMonoBehaviour&lt;Player&gt; {</div>
+<div class="line">public class Player : ExposedMonoBehaviour {</div>
 <div class="line">    private int _Health = 100;</div>
 <div class="line"> </div>
 <div class="line">    public void Damage(int Damage) {</div>
 <div class="line">        _Health -= Damage;</div>
 <div class="line"> </div>
 <div class="line">        API.Invoke(&quot;PlayerHealthChanged&quot;);</div>
-<div class="line">        Invoke(&quot;OnDamageTaken&quot;);</div>
+<div class="line">        InvokeLua(&quot;OnDamageTaken&quot;);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    public int Health {</div>
@@ -583,7 +616,7 @@ Usage Tutorial</h1>
 <div class="line">    SaveData(self);</div>
 <div class="line">end</div>
 </div><!-- fragment --><p >Keep in mind that in both cases the <code>MyPlayer.SaveData</code> table always has to be updated with the current values of X and Y before calling the <code>SaveData()</code> method. The Lua callback <code>OnExit</code> would be a suitable place to do this in both cases.</p>
-<h2><a class="anchor" id="autotoc_md23"></a>
+<h2><a class="anchor" id="autotoc_md25"></a>
 6. Message, warning, and error logging</h2>
 <p >You may use the following commands for message logging and error reporting in Lua:</p>
 <div class="fragment"><div class="line">print(&quot;Hello World!&quot;);</div>
@@ -603,7 +636,7 @@ Usage Tutorial</h1>
 <div class="line">RegisterEventHandler(&quot;LuaMesageLogged&quot;, &quot;OnLuaMessageLogged&quot;);</div>
 <div class="line"> </div>
 <div class="line">print(&quot;Hello World!&quot;);</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md24"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md26"></a>
 7. Further Support</h2>
 <p >This covers a large portion of the features in uLua! I hope that this tutorial together with the documentation are enough to get you started on your API development. However, for any further questions do not hesitate to contact <a href="#" onclick="location.href='mai'+'lto:'+'sup'+'po'+'rt@'+'an'+'tso'+'ft'+'war'+'e.'+'co.'+'uk'; return false;">suppo<span class="obfuscator">.nosp@m.</span>rt@a<span class="obfuscator">.nosp@m.</span>ntsof<span class="obfuscator">.nosp@m.</span>twar<span class="obfuscator">.nosp@m.</span>e.co.<span class="obfuscator">.nosp@m.</span>uk</a>.</p>
 <p >I have put together a demo paddle game project which utilises <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a>, and which comes with its own documentation of the API and source code. You may find it <a href="https://bit.ly/PaddleDemo">here</a>.</p>

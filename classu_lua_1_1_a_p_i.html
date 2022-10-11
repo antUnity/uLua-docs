@@ -24,11 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="uLua-160x160.png"/></td>
   <td id="projectalign">
-   <div id="projectname">uLua<span id="projectnumber">&#160;v1.1.2</span>
+   <div id="projectname">uLua<span id="projectnumber">&#160;v1.2.0</span>
    </div>
-   <div id="projectbrief">A Lua API Framework for Unity.</div>
+   <div id="projectbrief">A Lua Modding Framework for Unity.</div>
   </td>
  </tr>
  </tbody>
@@ -131,9 +130,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a34704d69a595a664270801e1d2b25544"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a34704d69a595a664270801e1d2b25544">RemoveEventHandlers</a> (<a class="el" href="classu_lua_1_1_lua_mono_behaviour.html">LuaMonoBehaviour</a> Context=null)</td></tr>
 <tr class="memdesc:a34704d69a595a664270801e1d2b25544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all global event handlers or event handlers registered in a specific context. <a href="classu_lua_1_1_a_p_i.html#a34704d69a595a664270801e1d2b25544">More...</a><br /></td></tr>
 <tr class="separator:a34704d69a595a664270801e1d2b25544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcda65c15f848791f6fcdb5e08bb402e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#adcda65c15f848791f6fcdb5e08bb402e">RegisterIndexedType&lt; T &gt;</a> ()</td></tr>
-<tr class="memdesc:adcda65c15f848791f6fcdb5e08bb402e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a type that implements the <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html" title="Interface used to implement a fully indexed Lua object.">IHasLuaIndexer</a> interface to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. <a href="classu_lua_1_1_a_p_i.html#adcda65c15f848791f6fcdb5e08bb402e">More...</a><br /></td></tr>
-<tr class="separator:adcda65c15f848791f6fcdb5e08bb402e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4318d5c5f3e852eeb62909a68995379a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a4318d5c5f3e852eeb62909a68995379a">RegisterIndexedType</a> (Type Type)</td></tr>
+<tr class="memdesc:a4318d5c5f3e852eeb62909a68995379a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a type that implements the <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html" title="Interface used to implement a fully indexed Lua object.">IHasLuaIndexer</a> interface to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. <a href="classu_lua_1_1_a_p_i.html#a4318d5c5f3e852eeb62909a68995379a">More...</a><br /></td></tr>
+<tr class="separator:a4318d5c5f3e852eeb62909a68995379a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cb9775ed28e5b25e1754f0424669425"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a5cb9775ed28e5b25e1754f0424669425">RegisterType&lt; T &gt;</a> ()</td></tr>
 <tr class="memdesc:a5cb9775ed28e5b25e1754f0424669425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a type to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. <a href="classu_lua_1_1_a_p_i.html#a5cb9775ed28e5b25e1754f0424669425">More...</a><br /></td></tr>
 <tr class="separator:a5cb9775ed28e5b25e1754f0424669425"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -365,7 +364,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 </div><div class="memdoc">
 
 <p>Exposes an object to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>.</p>
-<p >Called internally by <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html#a661a161cd4e92161756156f792e33863" title="Exposes the game object to Lua if ExposeOn is set to &#39;Start&#39;.">uLua.ExposedMonoBehaviour.Start()</a>. Can be called manually at an earlier point or for objects which have <code>ExposeOnStart</code> disabled. </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Called internally by <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html#a83a0836c5fdc604aa665c92af3e67da3" title="Exposes the game object to Lua if ExposeOn is set to &#39;Start&#39;.">uLua.ExposedMonoBehaviour.Start()</a>. Can be called manually at an earlier point or for objects which have <code>ExposeOnStart</code> disabled. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Object</td><td>The object to be exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. The generic type <code>T</code> must implement the <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html" title="Interface used to implement a fully indexed Lua object.">IHasLuaIndexer</a> interface. </td></tr>
     <tr><td class="paramname">Context</td><td>The <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> context of the object. If null, the object will be exposed as a global. </td></tr>
@@ -526,8 +525,8 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 
 </div>
 </div>
-<a id="adcda65c15f848791f6fcdb5e08bb402e" name="adcda65c15f848791f6fcdb5e08bb402e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcda65c15f848791f6fcdb5e08bb402e">&#9670;&nbsp;</a></span>RegisterIndexedType&lt; T &gt;()</h2>
+<a id="a4318d5c5f3e852eeb62909a68995379a" name="a4318d5c5f3e852eeb62909a68995379a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4318d5c5f3e852eeb62909a68995379a">&#9670;&nbsp;</a></span>RegisterIndexedType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -536,9 +535,10 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void uLua.API.RegisterIndexedType&lt; T &gt; </td>
+          <td class="memname">static void uLua.API.RegisterIndexedType </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>Type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -551,15 +551,6 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 
 <p>Registers a type that implements the <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html" title="Interface used to implement a fully indexed Lua object.">IHasLuaIndexer</a> interface to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>.</p>
 <p >Intended for use with <a class="el" href="classu_lua_1_1_lua_mono_behaviour.html" title="MonoBehaviour script which establishes a Lua object framework. For internal use.">LuaMonoBehaviour</a> and <a class="el" href="classu_lua_1_1_lua_class.html" title="Class structure which establishes a Lua object framework. For internal use.">LuaClass</a>. </p>
-<div class="typeconstraint">
-<dl><dt><b>Type Constraints</b></dt><dd>
-<table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>class</em></td><td>&#160;</td></tr>
-<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>IHasLuaIndexer</em></td><td>&#160;</td></tr>
-</table>
-</dd>
-</dl>
-</div>
 
 </div>
 </div>

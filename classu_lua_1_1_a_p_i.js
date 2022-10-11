@@ -8,7 +8,7 @@ var classu_lua_1_1_a_p_i =
     [ "Invoke", "classu_lua_1_1_a_p_i.html#ae85b13a4101bcfca3c7ad3e552d5e7cf", null ],
     [ "LoadSavedData", "classu_lua_1_1_a_p_i.html#a2d362a6db6d3e03ce35e85eada11c8bc", null ],
     [ "RegisterEventHandler", "classu_lua_1_1_a_p_i.html#a54e04f2dc4e28c911fe96e68a00d8537", null ],
-    [ "RegisterIndexedType< T >", "classu_lua_1_1_a_p_i.html#adcda65c15f848791f6fcdb5e08bb402e", null ],
+    [ "RegisterIndexedType", "classu_lua_1_1_a_p_i.html#a4318d5c5f3e852eeb62909a68995379a", null ],
     [ "RegisterType< T >", "classu_lua_1_1_a_p_i.html#a5cb9775ed28e5b25e1754f0424669425", null ],
     [ "RemoveEventHandlers", "classu_lua_1_1_a_p_i.html#a34704d69a595a664270801e1d2b25544", null ],
     [ "RemoveUserScript", "classu_lua_1_1_a_p_i.html#a701baa0ff512b4f6273cd8b4f3672c73", null ],

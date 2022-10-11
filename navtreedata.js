@@ -35,7 +35,7 @@ var NAVTREE =
         [ "2.3. User Scripts", "index.html#autotoc_md8", null ],
         [ "2.4. Manual Script Execution", "index.html#autotoc_md9", null ]
       ] ],
-      [ "3. Using the Event Handling System", "index.html#autotoc_md10", [
+      [ "3. Using the Event System", "index.html#autotoc_md10", [
         [ "3.1. Invoking Events", "index.html#autotoc_md11", null ],
         [ "3.2. Registering Event Handlers", "index.html#autotoc_md12", null ],
         [ "3.3. Removing Event Handlers", "index.html#autotoc_md13", null ],
@@ -47,11 +47,14 @@ var NAVTREE =
         [ "4.3. Using the Object Context", "index.html#autotoc_md18", null ],
         [ "4.4. Using Object Callback Functions", "index.html#autotoc_md19", null ],
         [ "4.5. Using Object Resource Scripts", "index.html#autotoc_md20", null ],
-        [ "4.6. Hiding Object Members in Lua", "index.html#autotoc_md21", null ]
+        [ "4.6. Overriding and Hiding Members in Lua", "index.html#autotoc_md21", [
+          [ "4.6.1. Overriding Methods", "index.html#autotoc_md22", null ],
+          [ "4.6.2. Hiding Members", "index.html#autotoc_md23", null ]
+        ] ]
       ] ],
-      [ "5. Saving and Loading Object Data", "index.html#autotoc_md22", null ],
-      [ "6. Message, warning, and error logging", "index.html#autotoc_md23", null ],
-      [ "7. Further Support", "index.html#autotoc_md24", null ]
+      [ "5. Saving and Loading Object Data", "index.html#autotoc_md24", null ],
+      [ "6. Message, warning, and error logging", "index.html#autotoc_md25", null ],
+      [ "7. Further Support", "index.html#autotoc_md26", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
