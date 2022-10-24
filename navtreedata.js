@@ -47,14 +47,15 @@ var NAVTREE =
         [ "4.3. Using the Object Context", "index.html#autotoc_md18", null ],
         [ "4.4. Using Object Callback Functions", "index.html#autotoc_md19", null ],
         [ "4.5. Using Object Resource Scripts", "index.html#autotoc_md20", null ],
-        [ "4.6. Overriding and Hiding Members in Lua", "index.html#autotoc_md21", [
+        [ "4.6. Overriding, and Hiding Objects and Members in Lua", "index.html#autotoc_md21", [
           [ "4.6.1. Overriding Methods", "index.html#autotoc_md22", null ],
-          [ "4.6.2. Hiding Members", "index.html#autotoc_md23", null ]
+          [ "4.6.2. Hiding Objects from User Scripts", "index.html#autotoc_md23", null ],
+          [ "4.6.3. Hiding Members", "index.html#autotoc_md24", null ]
         ] ]
       ] ],
-      [ "5. Saving and Loading Object Data", "index.html#autotoc_md24", null ],
-      [ "6. Message, warning, and error logging", "index.html#autotoc_md25", null ],
-      [ "7. Further Support", "index.html#autotoc_md26", null ]
+      [ "5. Saving and Loading Object Data", "index.html#autotoc_md25", null ],
+      [ "6. Message, warning, and error logging", "index.html#autotoc_md26", null ],
+      [ "7. Further Support", "index.html#autotoc_md27", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
