@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">uLua<span id="projectnumber">&#160;v1.2.1</span>
+   <div id="projectname">uLua<span id="projectnumber">&#160;v1.3.0</span>
    </div>
    <div id="projectbrief">A Lua Modding Framework for Unity.</div>
   </td>
@@ -103,6 +103,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adfc7ec8dcb8b8b80dad7d10efe8f074d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#adfc7ec8dcb8b8b80dad7d10efe8f074d">ClearUserScripts</a> ()</td></tr>
 <tr class="memdesc:adfc7ec8dcb8b8b80dad7d10efe8f074d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the user scripts list. <a href="classu_lua_1_1_a_p_i.html#adfc7ec8dcb8b8b80dad7d10efe8f074d">More...</a><br /></td></tr>
 <tr class="separator:adfc7ec8dcb8b8b80dad7d10efe8f074d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a290d7efe604d27542efcf1a1222fd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classu_lua_1_1_script_package.html">ScriptPackage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a9a290d7efe604d27542efcf1a1222fd5">GetPackage</a> (string PackageName)</td></tr>
+<tr class="memdesc:a9a290d7efe604d27542efcf1a1222fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="classu_lua_1_1_script_package.html" title="A class to describe Lua packages.">ScriptPackage</a> object for the specified package name. If the package is not found, returns a null value. <a href="classu_lua_1_1_a_p_i.html#a9a290d7efe604d27542efcf1a1222fd5">More...</a><br /></td></tr>
+<tr class="separator:a9a290d7efe604d27542efcf1a1222fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab668f51c44e87ac2ce716f36692845b7"><td class="memItemLeft" align="right" valign="top"><a id="ab668f51c44e87ac2ce716f36692845b7" name="ab668f51c44e87ac2ce716f36692845b7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetPackageCount</b> ()</td></tr>
+<tr class="memdesc:ab668f51c44e87ac2ce716f36692845b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of packages found under the script package path.<br /></td></tr>
+<tr class="separator:ab668f51c44e87ac2ce716f36692845b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa199306a8077a686ee6145a5aaacc8"><td class="memItemLeft" align="right" valign="top"><a id="aefa199306a8077a686ee6145a5aaacc8" name="aefa199306a8077a686ee6145a5aaacc8"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>GetPackageName</b> (int i)</td></tr>
+<tr class="memdesc:aefa199306a8077a686ee6145a5aaacc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the package at the specified index.<br /></td></tr>
+<tr class="separator:aefa199306a8077a686ee6145a5aaacc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47cb6c6f2a66e7bf2bac42c4c8748d0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a47cb6c6f2a66e7bf2bac42c4c8748d0d">LoadPackage</a> (string PackageName)</td></tr>
+<tr class="memdesc:a47cb6c6f2a66e7bf2bac42c4c8748d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public function used to load a <a class="el" href="classu_lua_1_1_script_package.html" title="A class to describe Lua packages.">ScriptPackage</a> on demand. <a href="classu_lua_1_1_a_p_i.html#a47cb6c6f2a66e7bf2bac42c4c8748d0d">More...</a><br /></td></tr>
+<tr class="separator:a47cb6c6f2a66e7bf2bac42c4c8748d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a701baa0ff512b4f6273cd8b4f3672c73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a701baa0ff512b4f6273cd8b4f3672c73">RemoveUserScript</a> (string Name)</td></tr>
 <tr class="memdesc:a701baa0ff512b4f6273cd8b4f3672c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the specified script from the user scripts. <a href="classu_lua_1_1_a_p_i.html#a701baa0ff512b4f6273cd8b4f3672c73">More...</a><br /></td></tr>
 <tr class="separator:a701baa0ff512b4f6273cd8b4f3672c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +144,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a34704d69a595a664270801e1d2b25544"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a34704d69a595a664270801e1d2b25544">RemoveEventHandlers</a> (<a class="el" href="classu_lua_1_1_lua_mono_behaviour.html">LuaMonoBehaviour</a> Context=null)</td></tr>
 <tr class="memdesc:a34704d69a595a664270801e1d2b25544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all global event handlers or event handlers registered in a specific context. <a href="classu_lua_1_1_a_p_i.html#a34704d69a595a664270801e1d2b25544">More...</a><br /></td></tr>
 <tr class="separator:a34704d69a595a664270801e1d2b25544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcda65c15f848791f6fcdb5e08bb402e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#adcda65c15f848791f6fcdb5e08bb402e">RegisterIndexedType&lt; T &gt;</a> ()</td></tr>
+<tr class="memdesc:adcda65c15f848791f6fcdb5e08bb402e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a type that implements the <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html" title="Interface used to implement a fully indexed Lua object.">IHasLuaIndexer</a> interface to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. <a href="classu_lua_1_1_a_p_i.html#adcda65c15f848791f6fcdb5e08bb402e">More...</a><br /></td></tr>
+<tr class="separator:adcda65c15f848791f6fcdb5e08bb402e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4318d5c5f3e852eeb62909a68995379a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a4318d5c5f3e852eeb62909a68995379a">RegisterIndexedType</a> (Type Type)</td></tr>
 <tr class="memdesc:a4318d5c5f3e852eeb62909a68995379a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a type that implements the <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html" title="Interface used to implement a fully indexed Lua object.">IHasLuaIndexer</a> interface to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. <a href="classu_lua_1_1_a_p_i.html#a4318d5c5f3e852eeb62909a68995379a">More...</a><br /></td></tr>
 <tr class="separator:a4318d5c5f3e852eeb62909a68995379a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,6 +175,10 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>SaveDataPath
 static string&#160;</td><td class="memItemRight" valign="bottom"><b>UserScriptsPath</b> = &quot;&quot;</td></tr>
 <tr class="memdesc:a7aa0f31db51b713753beb90492c12bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path for user scripts under the external directory.<br /></td></tr>
 <tr class="separator:a7aa0f31db51b713753beb90492c12bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0984986207083c324a1cd62f354ee0fd"><td class="memItemLeft" align="right" valign="top"><a id="a0984986207083c324a1cd62f354ee0fd" name="a0984986207083c324a1cd62f354ee0fd"></a>
+static string&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptPackagesPath</b> = &quot;&quot;</td></tr>
+<tr class="memdesc:a0984986207083c324a1cd62f354ee0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path for script packages under the external directory.<br /></td></tr>
+<tr class="separator:a0984986207083c324a1cd62f354ee0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ca842887a9a8735030c7ec2c7696cdf"><td class="memItemLeft" align="right" valign="top"><a id="a9ca842887a9a8735030c7ec2c7696cdf" name="a9ca842887a9a8735030c7ec2c7696cdf"></a>
 static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsExtension</b> = &quot;&quot;</td></tr>
 <tr class="memdesc:a9ca842887a9a8735030c7ec2c7696cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">File extension for all external <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> scripts.<br /></td></tr>
@@ -364,7 +385,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 </div><div class="memdoc">
 
 <p>Exposes an object to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>.</p>
-<p >Called internally by <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html#a83a0836c5fdc604aa665c92af3e67da3" title="Exposes the game object to Lua if ExposeOn is set to &#39;Start&#39;.">uLua.ExposedMonoBehaviour.Start()</a>. Can be called manually at an earlier point or for objects which have <code>ExposeOnStart</code> disabled. </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Called internally by <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html#a661a161cd4e92161756156f792e33863" title="Exposes the game object to Lua if ExposeOn is set to &#39;Start&#39;.">uLua.ExposedMonoBehaviour.Start()</a>. Can be called manually at an earlier point or for objects which have <code>ExposeOnStart</code> disabled. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Object</td><td>The object to be exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. The generic type <code>T</code> must implement the <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html" title="Interface used to implement a fully indexed Lua object.">IHasLuaIndexer</a> interface. </td></tr>
     <tr><td class="paramname">Context</td><td>The <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> context of the object. If null, the object will be exposed as a global. </td></tr>
@@ -380,6 +401,40 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 </dd>
 </dl>
 </div>
+
+</div>
+</div>
+<a id="a9a290d7efe604d27542efcf1a1222fd5" name="a9a290d7efe604d27542efcf1a1222fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a290d7efe604d27542efcf1a1222fd5">&#9670;&nbsp;</a></span>GetPackage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classu_lua_1_1_script_package.html">ScriptPackage</a> uLua.API.GetPackage </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>PackageName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the <a class="el" href="classu_lua_1_1_script_package.html" title="A class to describe Lua packages.">ScriptPackage</a> object for the specified package name. If the package is not found, returns a null value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">PackageName</td><td>The name of the package. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -422,6 +477,40 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
   <table class="params">
     <tr><td class="paramname">Event</td><td>The name of the event to be invoked. </td></tr>
     <tr><td class="paramname">args</td><td>(Optional) Parameters for the event handler. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a47cb6c6f2a66e7bf2bac42c4c8748d0d" name="a47cb6c6f2a66e7bf2bac42c4c8748d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47cb6c6f2a66e7bf2bac42c4c8748d0d">&#9670;&nbsp;</a></span>LoadPackage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool uLua.API.LoadPackage </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>PackageName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Public function used to load a <a class="el" href="classu_lua_1_1_script_package.html" title="A class to describe Lua packages.">ScriptPackage</a> on demand.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">PackageName</td><td>The name of the <a class="el" href="classu_lua_1_1_script_package.html" title="A class to describe Lua packages.">ScriptPackage</a> to be loaded. </td></tr>
   </table>
   </dd>
 </dl>
@@ -551,6 +640,43 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 
 <p>Registers a type that implements the <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html" title="Interface used to implement a fully indexed Lua object.">IHasLuaIndexer</a> interface to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>.</p>
 <p >Intended for use with <a class="el" href="classu_lua_1_1_lua_mono_behaviour.html" title="MonoBehaviour script which establishes a Lua object framework. For internal use.">LuaMonoBehaviour</a> and <a class="el" href="classu_lua_1_1_lua_class.html" title="Class structure which establishes a Lua object framework. For internal use.">LuaClass</a>. </p>
+
+</div>
+</div>
+<a id="adcda65c15f848791f6fcdb5e08bb402e" name="adcda65c15f848791f6fcdb5e08bb402e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcda65c15f848791f6fcdb5e08bb402e">&#9670;&nbsp;</a></span>RegisterIndexedType&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="classu_lua_1_1_a_p_i.html#a4318d5c5f3e852eeb62909a68995379a">uLua.API.RegisterIndexedType</a>&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a type that implements the <a class="el" href="interfaceu_lua_1_1_i_has_lua_indexer.html" title="Interface used to implement a fully indexed Lua object.">IHasLuaIndexer</a> interface to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>.</p>
+<p >Intended for use with <a class="el" href="classu_lua_1_1_lua_mono_behaviour.html" title="MonoBehaviour script which establishes a Lua object framework. For internal use.">LuaMonoBehaviour</a> and <a class="el" href="classu_lua_1_1_lua_class.html" title="Class structure which establishes a Lua object framework. For internal use.">LuaClass</a>. </p>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>class</em></td><td>&#160;</td></tr>
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>IHasLuaIndexer</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
 
 </div>
 </div>

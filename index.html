@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">uLua<span id="projectnumber">&#160;v1.2.1</span>
+   <div id="projectname">uLua<span id="projectnumber">&#160;v1.3.0</span>
    </div>
    <div id="projectbrief">A Lua Modding Framework for Unity.</div>
   </td>
@@ -86,26 +86,33 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title"><a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_C__Users_Aris_Documents_Projects_Titania_uTitania_Assets_Plugins_uLua_README"></a> <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> is a Lua Modding framework for Unity. It enables the development of a Lua API which may be used to mod your Unity Project.</p>
-<p ><a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> wraps around MoonSharp and provides an object oriented Lua Modding framework. It works by setting up an application-wide Lua context and exposing game objects to it. Objects exposed to the Lua context can then be accessed in Lua, allowing users to modify your game at runtime through the use of Lua scripts.</p>
+<div class="textblock"><p ><a class="anchor" id="md_C__Users_Aris_Documents_Projects_Titania_uTitania_Assets_Plugins_uLua_README"></a> <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> is a Lua Modding framework for Unity. It enables the development of a Lua API which may be used to add modding functionality to your Unity Project.</p>
+<p ><a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> wraps around MoonSharp and provides an object oriented Lua Modding framework. It works by setting up an application-wide Lua context and exposing game objects to it. Objects exposed to the Lua context can then be accessed in Lua scripts, allowing users to interact with your game at runtime.</p>
 <p ><a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> includes the following features:</p><ul>
 <li>Lua script execution from the Resources folder or an external directory.</li>
-<li>Event system which allows events to be invoked in C# and handled in Lua.</li>
+<li>The ability to organise user scripts in packages which can be easily installed and removed.</li>
+<li>Event and callback system which allows events and functions to be invoked in C# but implemented in Lua.</li>
 <li>Base classes to expose your game objects and data structures to Lua.</li>
-<li>Callback system for your Lua objects.</li>
-<li>Ability to override C# methods in Lua.</li>
+<li>Ability to override C# methods in Lua for specific objects.</li>
 </ul>
+<p >This project is the result of many hours of hard work. Please support me by leaving a review on the asset store! Follow my <a href="https://twitter.com/_ANTSoftware" title="@_ANTSoftware">Twitter</a>!</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Dependencies</h1>
 <ul>
 <li><a href="https://assetstore.unity.com/packages/tools/moonsharp-33776">MoonSharp for Unity</a></li>
 </ul>
 <h1><a class="anchor" id="autotoc_md2"></a>
+Resources</h1>
+<p >Below are some projects in which I have made use of <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> in Unity Engine. These are by no means complete products, but can be used as a demo use of this toolkit.</p>
+<ul>
+<li><b><a href="https://bit.ly/PaddleDemo">Demo Game</a>:</b> A demo game which uses <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a>, and comes with its own documentation of the API and source code.</li>
+<li><b><a href="https://bit.ly/uLuaEssentials">uLua.Essentials</a>:</b> A set of API objects which implement structures for an application manager, keybindings, an in-game console, and a profile manager.</li>
+<li><b><a href="https://bit.ly/uLuaObjects">uLua.Objects</a>:</b> A set of abstract classes which implement critical features of Unity Engine game objects in a Lua API, and an accompanying object manager class.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md3"></a>
 Documentation</h1>
 <p >This is the complete documentation for <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a>. For any further questions do not hesitate to contact <a href="#" onclick="location.href='mai'+'lto:'+'sup'+'po'+'rt@'+'an'+'tso'+'ft'+'war'+'e.'+'co.'+'uk'; return false;">suppo<span class="obfuscator">.nosp@m.</span>rt@a<span class="obfuscator">.nosp@m.</span>ntsof<span class="obfuscator">.nosp@m.</span>twar<span class="obfuscator">.nosp@m.</span>e.co.<span class="obfuscator">.nosp@m.</span>uk</a>.</p>
-<p >I have put together a demo game which uses <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a>, and which comes with its own documentation of the API and source code. You may find it <a href="https://bit.ly/PaddleDemo">here</a>.</p>
-<p >This project is the result of many hours of hard work. Please support me by leaving a review on the asset store! Follow my <a href="https://twitter.com/_ANTSoftware" title="@_ANTSoftware">Twitter</a>!</p>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Usage Tutorial</h1>
 <p ><b>Note: You must install the Unity MoonSharp plugin before you can use <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a>. Check the <em>Dependencies</em> section above.</b></p>
 <p ><a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> consists of the following main scripts:</p><ul>
@@ -115,7 +122,7 @@ Usage Tutorial</h1>
 <li><b><a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html" title="MonoBehaviour script exposed to Lua. You should use this class as a base for your API game objects.">uLua.ExposedMonoBehaviour</a>:</b> MonoBehaviour script which exposes its instances to Lua. To use as a base for game objects which will be accessible in your API.</li>
 </ul>
 <p >The following tutorial is a thorough introduction to the different classes and scripts in the <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> toolkit and will walk you through performing basic tasks with <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a>.</p>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 1. The API class</h2>
 <p >The <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class sets up various aspects of the <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> framework such as script execution directories and the event handling system.</p>
 <p >To start using <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a>, add the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> script to an object in your Unity scene.</p>
@@ -124,6 +131,7 @@ Usage Tutorial</h1>
 <li><b>ExternalDirectory</b>: Directory for external Lua scripts. <code>Application.persistentDataPath</code> is used unless otherwise specified.</li>
 <li><b>SaveDataPath</b>: Path for user save data under <code>ExternalDirectory</code>.</li>
 <li><b>UserScriptsPath</b>: Path for user scripts under <code>ExternalDirectory</code>. Scripts in this path are loaded automatically and executed if <code>EnableUserScripts</code> is enabled.</li>
+<li><b>ScriptPackagesPath</b>: Path for script packages under <code>ExternalDirectory</code>.</li>
 <li><b>LuaScriptsExtension</b>: The file extension for all external Lua scripts. Set to <em>lua</em> by default.</li>
 <li><b>EnableSceneScript</b>: If enabled, the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class attempts to load a script by the name of the scene. The scene script may be located in the <code>ResourcePath</code> or in the <code>UserScriptsPath</code>.</li>
 <li><b>EnableUserScripts</b>: If enabled, allows user scripts to be executed which extend the <code>SceneScript</code>.</li>
@@ -131,51 +139,119 @@ Usage Tutorial</h1>
 </ul>
 <p >The <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class implements various static methods which will be useful as you develop your API. These methods are introduced in the sections below.</p>
 <p >For now, you can stick to the default settings and continue to the next section.</p>
-<h2><a class="anchor" id="autotoc_md5"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 2. Executing Lua scripts</h2>
 <p >The <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class provides a scripting framework which allows you to execute Lua code by wrapping around the MoonSharp Lua interpreter. Lua scripts may be executed from the Resources folder of your project or from an external directory.</p>
 <p >In the following sections we will go through different approaches to executing Lua scripts.</p>
-<h3><a class="anchor" id="autotoc_md6"></a>
+<h3><a class="anchor" id="autotoc_md7"></a>
 2.1. Loading a Scene Script</h3>
 <p >A scene script is a Lua script which is executed as soon the scene is loaded. To enable scene scripts, use the <code>EnableSceneScript</code> option of the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class on the inspector UI.</p>
 <p >As an example consider that your scene is named <code>MyGameScene</code>. You may create the following script to execute a print command.</p>
 <p ><em><b>MyGameScene.lua</b></em> </p><div class="fragment"><div class="line">print (&quot;Hello World!&quot;);</div>
-</div><!-- fragment --><p >To execute this script, create a file named <em><b>MyGameScene.lua</b></em> and place it at the <code>ResourcePath</code> under the Resources folder in your project. The <code>ResourcePath</code> is set to the folder "Scripts" by default, which means the scene script would have to be placed in the following path:</p>
+</div><!-- fragment --><p >To execute this script, create a file named <em><b>MyGameScene.lua</b></em> and place it at the designated <code>ResourcePath</code> under the Resources folder in your project. The <code>ResourcePath</code> is set to the folder "Scripts" by default, which means the scene script would have to be placed in the following path:</p>
 <div class="fragment"><div class="line">Resources/Scripts/MyGameScene.lua</div>
 </div><!-- fragment --><p >When you run your scene in the editor, you should notice the message "Hello World!" output to the console. Congratulations, you have executed your first Lua script!</p>
-<h3><a class="anchor" id="autotoc_md7"></a>
+<h3><a class="anchor" id="autotoc_md8"></a>
 2.2. Loading a Scene Script Externally</h3>
-<p >The <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class also allows you to load the scene script from an external directory. To do so, you must use the <code>EnableUserScripts</code> option of the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class from the inspector UI. You must then move your scene script to the external directory under the <code>UserScriptsPath</code>. When loaded externally, the scene script must be placed in a folder which is named after the scene.</p>
+<p >The <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class also allows you to load the scene script from an external directory. To do so, you must use the <code>EnableUserScripts</code> option of the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class from the inspector UI. You must then move your scene script to the external directory under the designated <code>UserScriptsPath</code>. When loaded externally, the scene script must be placed in a folder which is named after the scene.</p>
 <p >The directory path would be the following in this example:</p>
 <div class="fragment"><div class="line">{ExternalDirectory}/{UserScriptsPath}/MyGameScene/MyGameScene.lua</div>
 </div><!-- fragment --><p ><em>Note: The external directory is set to Unity's <code>Application.persistentDataPath</code> by default. For more information about this directory path, check the <a href="https://docs.unity3d.com/ScriptReference/Application-persistentDataPath.html">relevant Unity documentation</a>.</em></p>
-<p ><em>Note: The <code>UserScriptsPath</code> is set to the folder "Scripts" by default.</em></p>
+<p ><em>Note: The value of <code>UserScriptsPath</code> is set to "Scripts" by default.</em></p>
 <p >Place your script in the appropriate directory and run the scene in the editor. You should notice the message "Hello World!" output to the console.</p>
 <p >When the <code>EnableSceneScript</code> option is enabled, the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class will attempt to load the scene script from the external directory <b>first</b>. If the scene script is not found in the external directory, it will then be loaded from the Resources folder. The intended use of this feature is to allow users to override the default implementation of scene scripts by redefining them at runtime. This is very useful if you want to allow users to modify your game behaviour.</p>
-<h3><a class="anchor" id="autotoc_md8"></a>
+<h3><a class="anchor" id="autotoc_md9"></a>
 2.3. User Scripts</h3>
 <p >In the previous section we explained how users can override a scene script. While that is useful, there are times when simply extending your scene script is all that is needed.</p>
 <p >The <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class can load additional user scripts which are executed after the scene script. To enable user scripts, use the <code>EnableUserScripts</code> option in the inspector UI.</p>
 <p >User scripts are indexed and loaded automatically as long as they are placed in an appropriate path under the external directory. The following paths are parsed for user scripts:</p>
 <div class="fragment"><div class="line">{ExternalDirectory}/{UserScriptsPath}/</div>
 <div class="line">{ExternalDirectory}/{UserScriptsPath}/MyGameScene/</div>
-</div><!-- fragment --><p >Any scripts found in these path will be executed by the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class <b>after</b> the scene script is executed. Scripts placed under the <code>MyGameScene</code> folder will only be loaded when that scene is active (i.e. a scene named <code>MyGameScene</code>). Scripts placed in the <code>UserScriptsPath</code> path will be loaded independently of which scene is loaded.</p>
+</div><!-- fragment --><p >Any scripts found in these path will be executed by the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class <b>after</b> the scene script is executed. Scripts placed under the <code>MyGameScene</code> folder will only be loaded when that scene is active (i.e. a scene named <code>MyGameScene</code>). All scripts placed in the designated <code>UserScriptsPath</code> path will be loaded independently of which scene is loaded.</p>
 <p >As an example, you may create the following Lua script and place it in one of those two directories:</p>
 <p ><em><b>MyUserScript.lua</b></em> </p><div class="fragment"><div class="line">print (&quot;This is a user script.&quot;);</div>
 </div><!-- fragment --><p >Run your scene and you should notice the following two messages output to the console:</p>
 <div class="fragment"><div class="line">Hello World!</div>
 <div class="line">This is a user script.</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md9"></a>
-2.4. Manual Script Execution</h3>
-<p >So far we have used the different inspector settings of the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class to execute Lua scripts. However, the default functionality implemented in <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> may not always fit your project workflow. For this reason, the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class also allows you to execute Lua scripts on demand from anywhere in your project.</p>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md10"></a>
+2.4. Script Packages</h3>
+<p >Script packages is a feature which allows users to organise scripts in groups (from here on called packages). Organising scripts in packages provides more control of the order of execution of different scripts, as well as easy installation and removal of several scripts at once.</p>
+<h4><a class="anchor" id="autotoc_md11"></a>
+2.4.1. Script package structure</h4>
+<p >Script packages are parsed and loaded <b>after</b> the base user scripts described in the previous section. Scripts must be placed in a folder under the designated <code>ScriptPackagesPath</code>. For instance, a package which is named <code>MyPackage</code> must be located in the following directory:</p>
+<div class="fragment"><div class="line">{ExternalDirectory}/{ScriptPackagesPath}/MyPackage/</div>
+</div><!-- fragment --><p ><em>Note: The value of <code>ScriptPackagesPath</code> is set to "Scripts/Packages" by default.</em></p>
+<p >Script packages are executed in alphabetical order based on the folder name. To organise script packages in levels of execution, you can add a number followed by a dash at the beginning of the folder name. For example, in the folder structure listed below, <code>MyPackage</code> will always be executed before OtherPackage.</p>
+<div class="fragment"><div class="line">{ExternalDirectory}/{ScriptPackagesPath}/0-MyPackage/</div>
+<div class="line">{ExternalDirectory}/{ScriptPackagesPath}/1-OtherPackage/</div>
+</div><!-- fragment --><p >Note that the API class ignores all characters prior to the first dash in the folder name when parsing for the name of the script package.</p>
+<p >Each package folder <b>must</b> contain a json file with the same name which acts as the table of contents for the package.</p>
+<p >The following is an example of the json file for the <code>MyPackage</code> package:</p>
+<p ><b>MyPackage.json</b></p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;Title&quot;: &quot;Script Package Title&quot;,</div>
+<div class="line">    &quot;Description&quot;: &quot;This is a description of the script package.&quot;,</div>
+<div class="line">    &quot;Version&quot; : &quot;v0.0.1&quot;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p >The properties listed in this example are the title, description, and version of the package which can be used for display purposes. In the following sections, we cover how to define the contents and dependencies of a package, and how to access installed packages.</p>
+<h4><a class="anchor" id="autotoc_md12"></a>
+2.4.2. Package contents and order of execution</h4>
+<p >Some properties defined in the package json file allow control of the execution order of scripts within packages. As an example, see the contents tag in the file below:</p>
+<p ><b>MyPackage.json</b></p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;Title&quot;: &quot;Script Package Title&quot;,</div>
+<div class="line">    &quot;Description&quot;: &quot;This is a description of the script package.&quot;,</div>
+<div class="line">    &quot;Version&quot; : &quot;v0.0.1&quot;,</div>
+<div class="line">    &quot;LoadAllFiles&quot;: true,</div>
+<div class="line">    &quot;LoadOnDemand&quot;: false,</div>
+<div class="line">    &quot;Contents&quot;: [</div>
+<div class="line">        &quot;File1&quot;,</div>
+<div class="line">        &quot;File0&quot;</div>
+<div class="line">    ]</div>
+<div class="line">}</div>
+</div><!-- fragment --><p >In this example we introduce three new properties: <code>Contents</code>, <code>LoadAllFiles</code>, and <code>LoadOnDemand</code>.</p>
+<p ><b>Contents:</b> The files listed in the contents tag will always be executed in the order they appear in the list. As a result, the contents tag is used to control the script order of execution within the package. Note that the file extension must be omitted from names in the contents list.</p>
+<p ><b>LoadAllFiles:</b> The <code>LoadAllFiles</code> property determines whether all scripts found in the package folder will be executed (<code>"LoadAllFiles": true</code>) or only those specified in the contents list (<code>"LoadAllFiles": false</code>). <code>LoadAllFiles</code> defaults to true if omitted.</p>
+<p ><b>LoadOnDemand:</b> The <code>LoadOnDemand</code> property determines the execution behaviour of the package. If set to true, the package will not be executed until explicitly requested. Otherwise, it will be loaded during on scene initialisation. <code>LoadOnDemand</code> defaults to false if omitted.</p>
+<h4><a class="anchor" id="autotoc_md13"></a>
+2.4.3. Dependencies</h4>
+<p >If a script package depends on another package to function correctly, then the order of execution of the two packages becomes very important. You may define a list of package names as dependencies which, if present, will be loaded before the package contents. An example json file is shown below:</p>
+<p ><b>MyPackage.json</b></p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;Title&quot;: &quot;Script Package Title&quot;,</div>
+<div class="line">    &quot;Description&quot;: &quot;This is a description of the script package.&quot;,</div>
+<div class="line">    &quot;Version&quot; : &quot;v0.0.1&quot;,</div>
+<div class="line">    &quot;Dependencies&quot;: [</div>
+<div class="line">        &quot;OtherPackage&quot;</div>
+<div class="line">    ]</div>
+<div class="line">}</div>
+</div><!-- fragment --><p >In this case, the API will look for and execute the package named <code>OtherPackage</code> when loading <code>MyPackage</code>.</p>
+<p >If a dependency is not found, the script package will not be executed.</p>
+<h4><a class="anchor" id="autotoc_md14"></a>
+2.4.4. Package API Functions</h4>
+<p >The data defined in the package json file is processed by the API class during the execution of the package. In addition, the Lua API maintains a list of installed packages which is accessible for reference and for loading packages on demand.</p>
+<p >This data is accessible through the C# API class:</p>
+<p ><a class="el" href="classu_lua_1_1_a_p_i.html#a9a290d7efe604d27542efcf1a1222fd5" title="Returns the ScriptPackage object for the specified package name. If the package is not found,...">uLua.API.GetPackage()</a>;</p>
+<p ><a class="el" href="classu_lua_1_1_a_p_i.html#ab668f51c44e87ac2ce716f36692845b7" title="Returns the number of packages found under the script package path.">uLua.API.GetPackageCount()</a>;</p>
+<p ><a class="el" href="classu_lua_1_1_a_p_i.html#aefa199306a8077a686ee6145a5aaacc8" title="Returns the name of the package at the specified index.">uLua.API.GetPackageName()</a>;</p>
+<p ><a class="el" href="classu_lua_1_1_a_p_i.html#a47cb6c6f2a66e7bf2bac42c4c8748d0d" title="Public function used to load a ScriptPackage on demand.">uLua.API.LoadPackage()</a>;</p>
+<p >and as globals in the Lua context:</p>
+<div class="fragment"><div class="line">GetPackage();</div>
+<div class="line">GetPackageCount();</div>
+<div class="line">GetPackageName();</div>
+<div class="line">LoadPackage();</div>
+</div><!-- fragment --><p >Check the full documentation for a list of available parameters and more information on how to use these methods.</p>
+<h3><a class="anchor" id="autotoc_md15"></a>
+2.5. Manual Script Execution</h3>
+<p >So far we have used various built-in settings of the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class to execute Lua scripts. In case the implemented functionality does not fit your project workflow, the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class also allows you to execute Lua scripts on demand from anywhere in your project.</p>
 <p >The following two static methods are available to use in your code:</p>
 <p ><a class="el" href="classu_lua_1_1_a_p_i.html#a7b506958b718c9b3917e917544b05449" title="Executes a script from the external directory.">uLua.API.ExecuteExternalFile()</a></p>
 <p ><a class="el" href="classu_lua_1_1_a_p_i.html#a9a5ef26647eabe286c7903ce1be3b68c" title="Executes a script from the resource directory.">uLua.API.ExecuteFile()</a></p>
 <p >These methods make use of the script execution framework defined by <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a>. This means that you do not need to specify the execution directories when calling these functions. As long as a game object with your <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> settings is set up in your scene, you can execute external or internal Lua scripts by the path to their filename. Check the full documentation for a list of available parameters and more information on how to use these methods.</p>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md16"></a>
 3. Using the Event System</h2>
 <p >In the previous section we went over the Lua script execution framework of <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a>. Another main feature of <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> is its event system. Events are very useful when implementing game behaviour, and <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> allows you to invoke game events and handle them by implementing event handlers in Lua.</p>
-<h3><a class="anchor" id="autotoc_md11"></a>
+<h3><a class="anchor" id="autotoc_md17"></a>
 3.1. Invoking Events</h3>
 <p >Events are invoked by the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class. The related method is static, which means it can be executed from anywhere in your project. For instance, to invoke an event named <code>PlayerHealthChanged</code> you can use the following command anywhere in your scene: </p><div class="fragment"><div class="line">uLua.API.Invoke(&quot;PlayerHealthChanged&quot;);</div>
 </div><!-- fragment --><p >When invoking an event, you may pass any arguments as optional parameters following the event name. For instance:</p>
@@ -183,7 +259,7 @@ Usage Tutorial</h1>
 </div><!-- fragment --><p >You may also invoke an event in a Lua script with the same syntax:</p>
 <div class="fragment"><div class="line">Invoke(&quot;MyEventWithParameters&quot;, 5, 1, &quot;text&quot;);</div>
 </div><!-- fragment --><p >You can name your game events whatever you like, however, the same event name must be used in the event handler registration.</p>
-<h3><a class="anchor" id="autotoc_md12"></a>
+<h3><a class="anchor" id="autotoc_md18"></a>
 3.2. Registering Event Handlers</h3>
 <p >Event handlers are registered and removed by the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class. The related methods are static, which means they can be executed from anywhere in your project. Until an event handler has been registered, the <a class="el" href="classu_lua_1_1_a_p_i.html#ae85b13a4101bcfca3c7ad3e552d5e7cf" title="Invokes a game event.">uLua.API.Invoke()</a> command will have no effect.</p>
 <p >To register an event handler for the <code>PlayerHealthChanged</code> event you can use the following command in C#: </p><div class="fragment"><div class="line">uLua.API.RegisterEventHandler(&quot;PlayerHealthChanged&quot;, &quot;OnPlayerHealthChanged&quot;);</div>
@@ -203,13 +279,13 @@ Usage Tutorial</h1>
 <div class="line"> </div>
 <div class="line">RegisterEventHandler(&quot;PlayerHealthChanged&quot;, &quot;OnPlayerHealthChanged&quot;);</div>
 </div><!-- fragment --><p >These two approaches are equivalent in functionality. However, allowing event handlers to be registered by the user in Lua scripts allows for a lot more flexibility in script design.</p>
-<h3><a class="anchor" id="autotoc_md13"></a>
+<h3><a class="anchor" id="autotoc_md19"></a>
 3.3. Removing Event Handlers</h3>
 <p >Event handlers may be removed by calling the following command in C#: </p><div class="fragment"><div class="line">uLua.API.RemoveEventHandlers();</div>
 </div><!-- fragment --><p >Or the following equivalent command in a Lua script: </p><div class="fragment"><div class="line">RemoveEventHandlers();</div>
 </div><!-- fragment --><p >These commands remove all <em>global</em> event handlers.</p>
-<p ><em>Note: Again, keep in mind that event handlers are not exclusively globals. Event handlers for a specific object are removed by using an optional third argument. For the sake of simplicity, we use global event handlers in this step of the tutorial.</em></p>
-<h3><a class="anchor" id="autotoc_md14"></a>
+<p ><em>Note: Again, keep in mind that event handlers are not exclusively globals. Event handlers for a specific object are removed by using an optional argument. For the sake of simplicity, we use global event handlers in this step of the tutorial.</em></p>
+<h3><a class="anchor" id="autotoc_md20"></a>
 3.4. The SceneLoaded / SceneUnloaded Events</h3>
 <p >The <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> class invokes a few events by default, including the <code>SceneLoaded</code> and <code>SceneUnloaded</code> events. The <code>SceneLoaded</code> event is invoked after the scene script is executed, and before any user scripts are executed. The <code>SceneUnloaded</code> event is invoked when a scene is unloaded. You may register an event handler for these events as you would for any other event. For instance, you could add the following event handlers to set up your scene:</p>
 <p ><em><b>MyGameScene.lua</b></em> </p><div class="fragment"><div class="line">function OnPlayerHealthChanged()</div>
@@ -227,12 +303,12 @@ Usage Tutorial</h1>
 <div class="line">RegisterEventHandler(&quot;PlayerHealthChanged&quot;, &quot;OnPlayerHealthChanged&quot;);</div>
 <div class="line">RegisterEventHandler(&quot;SceneLoaded&quot;, &quot;OnSceneLoaded&quot;);</div>
 <div class="line">RegisterEventHandler(&quot;SceneUnloaded&quot;, &quot;OnSceneUnloaded&quot;);</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md15"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md21"></a>
 4. Exposing Objects to Lua</h2>
 <p >In the previous two sections we have shown how the scene script can be structured to handle events invoked in your Unity scene. However, the API that we have set up so far has no game objects exposed to it that would allow us to implement game behaviour.</p>
 <p >To expose objects to the Lua API, <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> provides two approaches: the <a class="el" href="classu_lua_1_1_exposed_class.html" title="Class structure exposed to Lua. You should use this class as a base for your API data structures.">uLua.ExposedClass</a> and <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html" title="MonoBehaviour script exposed to Lua. You should use this class as a base for your API game objects.">uLua.ExposedMonoBehaviour</a> classes. Any script that inherits these classes will automatically expose its instances as objects of the API.</p>
 <p >When exposing game objects to the API, the <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> framework uses an object-oriented approach. Each game object is exposed to the API with a unique Lua handle. As we will explore in the following sections, this becomes important when developing your API and structuring your API object scripts.</p>
-<h3><a class="anchor" id="autotoc_md16"></a>
+<h3><a class="anchor" id="autotoc_md22"></a>
 4.1. The ExposedMonoBehaviour script</h3>
 <p ><a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html" title="MonoBehaviour script exposed to Lua. You should use this class as a base for your API game objects.">uLua.ExposedMonoBehaviour</a> is a MonoBehaviour script. It may be used as a component similarly to MonoBehaviour, but has the added functionality of exposing itself to Lua.</p>
 <p >When a class inherits <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html" title="MonoBehaviour script exposed to Lua. You should use this class as a base for your API game objects.">uLua.ExposedMonoBehaviour</a>, all its public members are accessible in Lua. This makes <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html" title="MonoBehaviour script exposed to Lua. You should use this class as a base for your API game objects.">uLua.ExposedMonoBehaviour</a> the base for developing your API objects.</p>
@@ -299,7 +375,7 @@ Usage Tutorial</h1>
 <div class="line">RegisterEventHandler(&quot;SceneLoaded&quot;, &quot;OnSceneLoaded&quot;);</div>
 <div class="line">RegisterEventHandler(&quot;SceneUnloaded&quot;, &quot;OnSceneUnloaded&quot;);</div>
 </div><!-- fragment --><p >The above example covers the most basic usage of this toolkit. It is recommended you experiment until you find a design that works for your game objects. For instance, if your Player object is comprised of several components (as is common in Unity), and you need properties of these components to be accessible in Lua, then you will have to write part of your <code>Player</code> script as a wrapper class, implementing getter and setter properties for its components as necessary for your Lua API. Alternatively, you may implement multiple components as an ExposedMonoBehaviour and expose them under a different name in Lua.</p>
-<h3><a class="anchor" id="autotoc_md17"></a>
+<h3><a class="anchor" id="autotoc_md23"></a>
 4.2. The ExposedClass script</h3>
 <p ><a class="el" href="classu_lua_1_1_exposed_class.html" title="Class structure exposed to Lua. You should use this class as a base for your API data structures.">uLua.ExposedClass</a> is intended for data structures which need to be exposed to the Lua API. It is similar to <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html" title="MonoBehaviour script exposed to Lua. You should use this class as a base for your API game objects.">uLua.ExposedMonoBehaviour</a>, however, the key difference is that <a class="el" href="classu_lua_1_1_exposed_class.html" title="Class structure exposed to Lua. You should use this class as a base for your API data structures.">uLua.ExposedClass</a> is a simple C# class instead of a MonoBehaviour script.</p>
 <p >As an example, you may use <a class="el" href="classu_lua_1_1_exposed_class.html" title="Class structure exposed to Lua. You should use this class as a base for your API data structures.">uLua.ExposedClass</a> to describe a weapon item in your game. A simple class definition is the following:</p>
@@ -365,7 +441,7 @@ Usage Tutorial</h1>
 <div class="line">    public Weapon(string Name, LuaMonoBehaviour Context = null): base(Name, Context, false) {</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md18"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md24"></a>
 4.3. Using the Object Context</h3>
 <p >In the previous two sections we went over the basics of using <a class="el" href="classu_lua_1_1_exposed_class.html" title="Class structure exposed to Lua. You should use this class as a base for your API data structures.">uLua.ExposedClass</a> and <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html" title="MonoBehaviour script exposed to Lua. You should use this class as a base for your API game objects.">uLua.ExposedMonoBehaviour</a> classes to expose objects to your API. The <code>Context</code> object is an important feature of these classes.</p>
 <p >The <code>Context</code> object allows you to set a hierarchy for objects exposed to your API. If a <code>Context</code> object is not specified, a Lua object is defined as a global by default. This is what we have done so far.</p>
@@ -415,7 +491,7 @@ Usage Tutorial</h1>
 <div class="line">RegisterEventHandler(&quot;SceneUnloaded&quot;, &quot;OnSceneUnloaded&quot;);</div>
 </div><!-- fragment --><p >Here we have added a command to set the <code>Sword.Damage</code> property to 2 for the <code>Sword</code> object which is in the context of our <code>MyPlayer</code> object.</p>
 <p >The <code>Context</code> is of type <a class="el" href="classu_lua_1_1_lua_mono_behaviour.html" title="MonoBehaviour script which establishes a Lua object framework. For internal use.">uLua.LuaMonoBehaviour</a>, which is the base of <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html" title="MonoBehaviour script exposed to Lua. You should use this class as a base for your API game objects.">uLua.ExposedMonoBehaviour</a>. As a result, the <code>Context</code> must be a game object, and cannot be a <a class="el" href="classu_lua_1_1_exposed_class.html" title="Class structure exposed to Lua. You should use this class as a base for your API data structures.">uLua.ExposedClass</a> object. To set the context of a <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html" title="MonoBehaviour script exposed to Lua. You should use this class as a base for your API game objects.">uLua.ExposedMonoBehaviour</a> game object, you can use its public member <code>Context</code> or the inspector UI.</p>
-<h3><a class="anchor" id="autotoc_md19"></a>
+<h3><a class="anchor" id="autotoc_md25"></a>
 4.4. Using Object Callback Functions</h3>
 <p >In this section we will go over invoking and implementing callback functions for your API objects. This is a feature of both <a class="el" href="classu_lua_1_1_exposed_class.html" title="Class structure exposed to Lua. You should use this class as a base for your API data structures.">uLua.ExposedClass</a> and <a class="el" href="classu_lua_1_1_lua_mono_behaviour.html" title="MonoBehaviour script which establishes a Lua object framework. For internal use.">uLua.LuaMonoBehaviour</a> which allows callback methods to be invoked in Unity and handled in Lua.</p>
 <p >The callback system is similar to the event handling system. The key difference is that callbacks are object-specific. In contrast, event handlers may be defined as globals or as members of any object.</p>
@@ -473,7 +549,7 @@ Usage Tutorial</h1>
 <li>Event handlers may be defined as globals or as a member of any object. Callback functions are object-specific.</li>
 <li>To implement a callback function, you must know the Lua handle of an object (<code>Context.Name</code>) or have a reference to the object, e.g. returned from a function.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md20"></a>
+<h3><a class="anchor" id="autotoc_md26"></a>
 4.5. Using Object Resource Scripts</h3>
 <p >Another feature of the <a class="el" href="classu_lua_1_1_exposed_class.html" title="Class structure exposed to Lua. You should use this class as a base for your API data structures.">uLua.ExposedClass</a> and <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html" title="MonoBehaviour script exposed to Lua. You should use this class as a base for your API game objects.">uLua.ExposedMonoBehaviour</a> classes is the ability to execute a Lua script for each object that is exposed to the Lua API. You may use this feature to implement base functionality for your game objects which cannot be modified by external user scripts.</p>
 <ul>
@@ -484,9 +560,9 @@ Usage Tutorial</h1>
 <p >For instance, for a <code>Player</code> object named <code>MyPlayer</code>, you may place a resource script in the following path:</p>
 <div class="fragment"><div class="line">Resources/Scripts/MyPlayer.lua</div>
 </div><!-- fragment --><p ><em>Note: This is assuming that the <code>UserScriptsPath</code> is set to its default value of "Scripts".</em></p>
-<h3><a class="anchor" id="autotoc_md21"></a>
+<h3><a class="anchor" id="autotoc_md27"></a>
 4.6. Overriding, and Hiding Objects and Members in Lua</h3>
-<h4><a class="anchor" id="autotoc_md22"></a>
+<h4><a class="anchor" id="autotoc_md28"></a>
 4.6.1. Overriding Methods</h4>
 <p >Allowing users to override a method in a modding framework enables mods to significantly change object behaviour. By default, methods defined in <code>ExposedClass</code> and <code>ExposedMonoBehaviour</code> scripts may not be overridden in Lua.</p>
 <p >To allow a method to be overridden in Lua, you may use the the <code>[AllowLuaOverride]</code> attribute. The use of this feature is limited to method calls made in a Lua script. If an overridden method is called in C#, its original implementation will be called instead.</p>
@@ -519,11 +595,11 @@ Usage Tutorial</h1>
 <div class="line">    </div>
 <div class="line">    Invoke(&quot;PlayerHealthChanged&quot;);</div>
 <div class="line">end</div>
-</div><!-- fragment --><h4><a class="anchor" id="autotoc_md23"></a>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md29"></a>
 4.6.2. Hiding Objects from User Scripts</h4>
 <p >It is often useful to hide certain objects of the API from users. To achieve this, you may use the <code>UserBlacklist</code> feature. This is available in the API class through the Unity inspector. Adding the name of a global object to the <code>UserBlacklist</code> list will make it unavailable to user scripts at runtime.</p>
 <p >This feature may be used to hide objects of the API from users, while keeping them available to use in-engine.</p>
-<h4><a class="anchor" id="autotoc_md24"></a>
+<h4><a class="anchor" id="autotoc_md30"></a>
 4.6.3. Hiding Members</h4>
 <p >Sometimes it is unsafe to expose certain class members to your Lua API. To prevent a public member from being exposed to Lua, you may add the relevant MoonSharp attribute to a class:</p>
 <div class="fragment"><div class="line">[MoonSharpHideMember(&quot;MemberName&quot;)]</div>
@@ -552,7 +628,7 @@ Usage Tutorial</h1>
 <div class="line">    }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p >This would prevent the <code>Awake()</code> method from being called within the Lua API. This could also be achieved by defining the <code>Awake()</code> method as <code>protected</code> or <code>private</code>. However, that would not be an option in cases where a specific member must be public so that other scripts in your project can have access to it.</p>
-<h2><a class="anchor" id="autotoc_md25"></a>
+<h2><a class="anchor" id="autotoc_md31"></a>
 5. Saving and Loading Object Data</h2>
 <p >The <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> script allows you to save variables of a Lua API object into a file which can then be loaded again at runtime. This feature may be used to save settings or other information and load it seamlessly back into your API in-between playthroughs.</p>
 <p >To save data and load for a Lua object, you can use the following commands anywhere in your scene: </p><div class="fragment"><div class="line">uLua.API.SaveData();</div>
@@ -622,7 +698,7 @@ Usage Tutorial</h1>
 <div class="line">    SaveData(self);</div>
 <div class="line">end</div>
 </div><!-- fragment --><p >Keep in mind that in both cases the <code>MyPlayer.SaveData</code> table always has to be updated with the current values of X and Y before calling the <code>SaveData()</code> method. The Lua callback <code>OnExit</code> would be a suitable place to do this in both cases.</p>
-<h2><a class="anchor" id="autotoc_md26"></a>
+<h2><a class="anchor" id="autotoc_md32"></a>
 6. Message, warning, and error logging</h2>
 <p >You may use the following commands for message logging and error reporting in Lua:</p>
 <div class="fragment"><div class="line">print(&quot;Hello World!&quot;);</div>
@@ -642,7 +718,7 @@ Usage Tutorial</h1>
 <div class="line">RegisterEventHandler(&quot;LuaMesageLogged&quot;, &quot;OnLuaMessageLogged&quot;);</div>
 <div class="line"> </div>
 <div class="line">print(&quot;Hello World!&quot;);</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md27"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md33"></a>
 7. Further Support</h2>
 <p >This covers a large portion of the features in uLua! I hope that this tutorial together with the documentation are enough to get you started on your API development. However, for any further questions do not hesitate to contact <a href="#" onclick="location.href='mai'+'lto:'+'sup'+'po'+'rt@'+'an'+'tso'+'ft'+'war'+'e.'+'co.'+'uk'; return false;">suppo<span class="obfuscator">.nosp@m.</span>rt@a<span class="obfuscator">.nosp@m.</span>ntsof<span class="obfuscator">.nosp@m.</span>twar<span class="obfuscator">.nosp@m.</span>e.co.<span class="obfuscator">.nosp@m.</span>uk</a>.</p>
 <p >I have put together a demo paddle game project which utilises <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a>, and which comes with its own documentation of the API and source code. You may find it <a href="https://bit.ly/PaddleDemo">here</a>.</p>

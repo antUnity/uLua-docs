@@ -9,5 +9,7 @@ var namespaceu_lua =
     [ "Lua", "classu_lua_1_1_lua.html", "classu_lua_1_1_lua" ],
     [ "LuaClass", "classu_lua_1_1_lua_class.html", "classu_lua_1_1_lua_class" ],
     [ "LuaMonoBehaviour", "classu_lua_1_1_lua_mono_behaviour.html", "classu_lua_1_1_lua_mono_behaviour" ],
+    [ "ScriptPackage", "classu_lua_1_1_script_package.html", "classu_lua_1_1_script_package" ],
+    [ "ScriptPackageJson", "classu_lua_1_1_script_package_json.html", null ],
     [ "ExposeOn", "namespaceu_lua.html#adb212deb696a0839cdd04ea9eec4d5f4", null ]
 ];
