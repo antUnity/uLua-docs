@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['valuetoluavalue_0',['ValueToLuaValue',['../classu_lua_1_1_lua.html#aa8d75530e740d1ac8bae3e5a228c1295',1,'uLua::Lua']]],
-  ['version_1',['Version',['../classu_lua_1_1_script_package.html#add94e4b26c7fc8aa990e4873bff4fe46',1,'uLua::ScriptPackage']]]
+  ['ulua_0',['uLua',['../index.html',1,'(Global Namespace)'],['../namespaceu_lua.html',1,'uLua']]],
+  ['userscriptspath_1',['UserScriptsPath',['../classu_lua_1_1_a_p_i.html#a7aa0f31db51b713753beb90492c12bde',1,'uLua::API']]]
 ];

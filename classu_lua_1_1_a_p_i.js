@@ -20,6 +20,7 @@ var classu_lua_1_1_a_p_i =
     [ "SaveData", "classu_lua_1_1_a_p_i.html#a4feae7dfb393e8a11f907a96c25ef14b", null ],
     [ "ExternalDirectory", "classu_lua_1_1_a_p_i.html#a7bb50177d7009eae7f2a8d5c9d0046db", null ],
     [ "LuaScriptsExtension", "classu_lua_1_1_a_p_i.html#a9ca842887a9a8735030c7ec2c7696cdf", null ],
+    [ "ModulesPath", "classu_lua_1_1_a_p_i.html#ab5b3368c225a0eb8ae241acad8a03d0f", null ],
     [ "ResourcePath", "classu_lua_1_1_a_p_i.html#a3c6077b90221d45369c706712e80c2c0", null ],
     [ "SaveDataPath", "classu_lua_1_1_a_p_i.html#ae11ac18faabb9320023906bd440fdae3", null ],
     [ "ScriptPackagesPath", "classu_lua_1_1_a_p_i.html#a0984986207083c324a1cd62f354ee0fd", null ],

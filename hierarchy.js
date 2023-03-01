@@ -18,6 +18,9 @@ var hierarchy =
       [ "uLua.API", "classu_lua_1_1_a_p_i.html", null ],
       [ "uLua.LuaMonoBehaviour", "classu_lua_1_1_lua_mono_behaviour.html", null ]
     ] ],
+    [ "MoonSharp.Interpreter.Loaders.ScriptLoaderBase", null, [
+      [ "uLua.ScriptLoader", "classu_lua_1_1_script_loader.html", null ]
+    ] ],
     [ "uLua.ScriptPackage", "classu_lua_1_1_script_package.html", null ],
     [ "uLua.ScriptPackageJson", "classu_lua_1_1_script_package_json.html", null ],
     [ "StandardUserDataDescriptor", null, [

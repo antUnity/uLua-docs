@@ -11,5 +11,6 @@ var classu_lua_1_1_lua =
     [ "Set", "classu_lua_1_1_lua.html#ad151bb76a3c22611e2d90fe5167ebb37", null ],
     [ "ValueToLuaValue", "classu_lua_1_1_lua.html#aa8d75530e740d1ac8bae3e5a228c1295", null ],
     [ "NewFunction", "classu_lua_1_1_lua.html#ac83aa7b7664b2dc277e5d77028b6727f", null ],
-    [ "NewTable", "classu_lua_1_1_lua.html#adcb9f9f5b213571a065bf3f3987c03ef", null ]
+    [ "NewTable", "classu_lua_1_1_lua.html#adcb9f9f5b213571a065bf3f3987c03ef", null ],
+    [ "ScriptLoader", "classu_lua_1_1_lua.html#a2a418de4673e1518d7d1716f93eb9523", null ]
 ];

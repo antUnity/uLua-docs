@@ -10,6 +10,7 @@ var annotated_dup =
       [ "Lua", "classu_lua_1_1_lua.html", "classu_lua_1_1_lua" ],
       [ "LuaClass", "classu_lua_1_1_lua_class.html", "classu_lua_1_1_lua_class" ],
       [ "LuaMonoBehaviour", "classu_lua_1_1_lua_mono_behaviour.html", "classu_lua_1_1_lua_mono_behaviour" ],
+      [ "ScriptLoader", "classu_lua_1_1_script_loader.html", "classu_lua_1_1_script_loader" ],
       [ "ScriptPackage", "classu_lua_1_1_script_package.html", "classu_lua_1_1_script_package" ],
       [ "ScriptPackageJson", "classu_lua_1_1_script_package_json.html", null ]
     ] ]

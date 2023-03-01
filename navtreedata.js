@@ -31,16 +31,16 @@ var NAVTREE =
     [ "Usage Tutorial", "index.html#autotoc_md4", [
       [ "1. The API class", "index.html#autotoc_md5", null ],
       [ "2. Executing Lua scripts", "index.html#autotoc_md6", [
-        [ "2.1. Loading a Scene Script", "index.html#autotoc_md7", null ],
-        [ "2.2. Loading a Scene Script Externally", "index.html#autotoc_md8", null ],
-        [ "2.3. User Scripts", "index.html#autotoc_md9", null ],
-        [ "2.4. Script Packages", "index.html#autotoc_md10", [
-          [ "2.4.1. Script package structure", "index.html#autotoc_md11", null ],
-          [ "2.4.2. Package contents and order of execution", "index.html#autotoc_md12", null ],
-          [ "2.4.3. Dependencies", "index.html#autotoc_md13", null ],
-          [ "2.4.4. Package API Functions", "index.html#autotoc_md14", null ]
-        ] ],
-        [ "2.5. Manual Script Execution", "index.html#autotoc_md15", null ]
+        [ "2.1. Executing a Scene Script", "index.html#autotoc_md7", null ],
+        [ "2.2. Executing a Scene Script Externally", "index.html#autotoc_md8", null ],
+        [ "2.3. Manual Script Execution", "index.html#autotoc_md9", null ],
+        [ "2.4. User Scripts", "index.html#autotoc_md10", null ],
+        [ "2.5. Script Packages", "index.html#autotoc_md11", [
+          [ "2.5.1. Script package structure", "index.html#autotoc_md12", null ],
+          [ "2.5.2. Package contents and order of execution", "index.html#autotoc_md13", null ],
+          [ "2.5.3. Dependencies", "index.html#autotoc_md14", null ],
+          [ "2.5.4. Package API Functions", "index.html#autotoc_md15", null ]
+        ] ]
       ] ],
       [ "3. Using the Event System", "index.html#autotoc_md16", [
         [ "3.1. Invoking Events", "index.html#autotoc_md17", null ],

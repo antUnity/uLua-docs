@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resourcepath_0',['ResourcePath',['../classu_lua_1_1_a_p_i.html#a3c6077b90221d45369c706712e80c2c0',1,'uLua::API']]]
+  ['modulespath_0',['ModulesPath',['../classu_lua_1_1_a_p_i.html#ab5b3368c225a0eb8ae241acad8a03d0f',1,'uLua::API']]]
 ];
