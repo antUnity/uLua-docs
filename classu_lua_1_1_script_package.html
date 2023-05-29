@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">uLua<span id="projectnumber">&#160;v1.3.2</span>
+   <div id="projectname">uLua<span id="projectnumber">&#160;v2.0.0</span>
    </div>
    <div id="projectbrief">A Lua Modding Framework for Unity.</div>
   </td>
@@ -96,12 +96,20 @@ $(document).ready(function(){initNavTree('classu_lua_1_1_script_package.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae85e24c9378a8b4312180ef74ee00fd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_script_package.html#ae85e24c9378a8b4312180ef74ee00fd7">ScriptPackage</a> (string <a class="el" href="classu_lua_1_1_script_package.html#ab420a02ce82b8080b445b28dc0b1c6c7">Name</a>, string <a class="el" href="classu_lua_1_1_script_package.html#a253ebfce6391d6105c9a9145e73c0e4d">FolderName</a>, <a class="el" href="classu_lua_1_1_script_package_json.html">ScriptPackageJson</a> PackageJson)</td></tr>
-<tr class="memdesc:ae85e24c9378a8b4312180ef74ee00fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public constructor. This is the main way to initialise a <a class="el" href="classu_lua_1_1_script_package.html" title="A class to describe Lua packages.">ScriptPackage</a> object. <a href="classu_lua_1_1_script_package.html#ae85e24c9378a8b4312180ef74ee00fd7">More...</a><br /></td></tr>
-<tr class="separator:ae85e24c9378a8b4312180ef74ee00fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a723a9cac45f2c5883d2a829ffad14f89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_script_package.html#a723a9cac45f2c5883d2a829ffad14f89">ScriptPackage</a> (string <a class="el" href="classu_lua_1_1_script_package.html#ab420a02ce82b8080b445b28dc0b1c6c7">Name</a>, string <a class="el" href="classu_lua_1_1_script_package.html#a253ebfce6391d6105c9a9145e73c0e4d">FolderName</a>, <a class="el" href="classu_lua_1_1_script_package_json.html">ScriptPackageJson</a> PackageJson, bool <a class="el" href="classu_lua_1_1_script_package.html#a254b49a46a81c339d4503c3e7cfbcff1">IsExternal</a>)</td></tr>
+<tr class="memdesc:a723a9cac45f2c5883d2a829ffad14f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public constructor. This is the main way to initialise a <a class="el" href="classu_lua_1_1_script_package.html" title="A class to describe Lua packages.">ScriptPackage</a> object. <a href="classu_lua_1_1_script_package.html#a723a9cac45f2c5883d2a829ffad14f89">More...</a><br /></td></tr>
+<tr class="separator:a723a9cac45f2c5883d2a829ffad14f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56fba80af87933287d7328149b390fa6"><td class="memItemLeft" align="right" valign="top"><a id="a56fba80af87933287d7328149b390fa6" name="a56fba80af87933287d7328149b390fa6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SwitchToExternal</b> ()</td></tr>
+<tr class="memdesc:a56fba80af87933287d7328149b390fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is used to switch the package definition to external. Using this method instead of a public property protects the accessibility of IsExternal.<br /></td></tr>
+<tr class="separator:a56fba80af87933287d7328149b390fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
+<tr class="memitem:a57ed6fa50574354c0428c65b8e3b29df"><td class="memItemLeft" align="right" valign="top"><a id="a57ed6fa50574354c0428c65b8e3b29df" name="a57ed6fa50574354c0428c65b8e3b29df"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>AllowExternalOverride</b><code> [get]</code></td></tr>
+<tr class="memdesc:a57ed6fa50574354c0428c65b8e3b29df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a <a class="el" href="classu_lua_1_1_script_package.html" title="A class to describe Lua packages.">ScriptPackage</a> defined in resources can be overriden by an external definition.<br /></td></tr>
+<tr class="separator:a57ed6fa50574354c0428c65b8e3b29df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a621ae3eeff90d4fa9dd4aec975fc2b72"><td class="memItemLeft" align="right" valign="top"><a id="a621ae3eeff90d4fa9dd4aec975fc2b72" name="a621ae3eeff90d4fa9dd4aec975fc2b72"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadAllFiles</b><code> [get]</code></td></tr>
 <tr class="memdesc:a621ae3eeff90d4fa9dd4aec975fc2b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines which scripts of a <a class="el" href="classu_lua_1_1_script_package.html" title="A class to describe Lua packages.">ScriptPackage</a> will be executed. If true, all scripts found under the <a class="el" href="classu_lua_1_1_script_package.html" title="A class to describe Lua packages.">ScriptPackage</a> folder will be executed. Otherwise, only scripts specified in the Contents list will be executed.<br /></td></tr>
@@ -126,6 +134,10 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>Description</b><cod
 string&#160;</td><td class="memItemRight" valign="bottom"><b>FolderName</b><code> [get]</code></td></tr>
 <tr class="memdesc:a253ebfce6391d6105c9a9145e73c0e4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the folder in which the <a class="el" href="classu_lua_1_1_script_package.html" title="A class to describe Lua packages.">ScriptPackage</a> is contained (i.e. if it differs from the index name of the <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> package).<br /></td></tr>
 <tr class="separator:a253ebfce6391d6105c9a9145e73c0e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a254b49a46a81c339d4503c3e7cfbcff1"><td class="memItemLeft" align="right" valign="top"><a id="a254b49a46a81c339d4503c3e7cfbcff1" name="a254b49a46a81c339d4503c3e7cfbcff1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsExternal</b><code> [get]</code></td></tr>
+<tr class="memdesc:a254b49a46a81c339d4503c3e7cfbcff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the IsExternal property of the package.<br /></td></tr>
+<tr class="separator:a254b49a46a81c339d4503c3e7cfbcff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab420a02ce82b8080b445b28dc0b1c6c7"><td class="memItemLeft" align="right" valign="top"><a id="ab420a02ce82b8080b445b28dc0b1c6c7" name="ab420a02ce82b8080b445b28dc0b1c6c7"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get]</code></td></tr>
 <tr class="memdesc:ab420a02ce82b8080b445b28dc0b1c6c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the index name of the <a class="el" href="classu_lua_1_1_script_package.html" title="A class to describe Lua packages.">ScriptPackage</a>.<br /></td></tr>
@@ -142,8 +154,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>Version</b><code> [
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A class to describe <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> packages.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae85e24c9378a8b4312180ef74ee00fd7" name="ae85e24c9378a8b4312180ef74ee00fd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae85e24c9378a8b4312180ef74ee00fd7">&#9670;&nbsp;</a></span>ScriptPackage()</h2>
+<a id="a723a9cac45f2c5883d2a829ffad14f89" name="a723a9cac45f2c5883d2a829ffad14f89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a723a9cac45f2c5883d2a829ffad14f89">&#9670;&nbsp;</a></span>ScriptPackage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,7 +179,13 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>Version</b><code> [
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classu_lua_1_1_script_package_json.html">ScriptPackageJson</a>&#160;</td>
-          <td class="paramname"><em>PackageJson</em>&#160;</td>
+          <td class="paramname"><em>PackageJson</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>IsExternal</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -188,6 +206,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>Version</b><code> [
     <tr><td class="paramname">Name</td><td>The name of the <a class="el" href="classu_lua_1_1_script_package.html" title="A class to describe Lua packages.">ScriptPackage</a>. </td></tr>
     <tr><td class="paramname">FolderName</td><td>The name of the folder in which the <a class="el" href="classu_lua_1_1_script_package.html" title="A class to describe Lua packages.">ScriptPackage</a> is contained (i.e. if it differs from the name of the <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> package). </td></tr>
     <tr><td class="paramname">PackageJson</td><td>The object which holds most information for the <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> package. </td></tr>
+    <tr><td class="paramname">IsExternal</td><td>Specifies if the script package was defined as an external package. </td></tr>
   </table>
   </dd>
 </dl>

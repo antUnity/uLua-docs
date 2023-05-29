@@ -1,9 +1,7 @@
 var classu_lua_1_1_exposed_mono_behaviour =
 [
-    [ "Awake", "classu_lua_1_1_exposed_mono_behaviour.html#a3d53cc91b08a17edc3add6962a984d50", null ],
-    [ "Awake", "classu_lua_1_1_exposed_mono_behaviour.html#a3d53cc91b08a17edc3add6962a984d50", null ],
-    [ "Start", "classu_lua_1_1_exposed_mono_behaviour.html#a661a161cd4e92161756156f792e33863", null ],
-    [ "Start", "classu_lua_1_1_exposed_mono_behaviour.html#a661a161cd4e92161756156f792e33863", null ],
-    [ "EnableResourceScript", "classu_lua_1_1_exposed_mono_behaviour.html#a4d9de016798fc775f45546f51bbd4735", null ],
-    [ "ExposeOn", "classu_lua_1_1_exposed_mono_behaviour.html#aff0e40d2d003b3644b50f2306cb903db", null ]
+    [ "Awake", "classu_lua_1_1_exposed_mono_behaviour.html#a76769e4253ab5bef443dafbb71eee99b", null ],
+    [ "Start", "classu_lua_1_1_exposed_mono_behaviour.html#a83a0836c5fdc604aa665c92af3e67da3", null ],
+    [ "EnableObjectScript", "classu_lua_1_1_exposed_mono_behaviour.html#a0d465619d2637165bb8f2b46c5655150", null ],
+    [ "ExposeOn", "classu_lua_1_1_exposed_mono_behaviour.html#a6b11afe66f5bbc05a95292c2d7a28d86", null ]
 ];

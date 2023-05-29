@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ulua_0',['uLua',['../index.html',1,'']]]
+  ['ulua_3a_20lua_20modding_20framework_0',['uLua: Lua Modding Framework',['../index.html',1,'']]]
 ];

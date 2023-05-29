@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['valuetoluavalue_0',['ValueToLuaValue',['../classu_lua_1_1_lua.html#aa8d75530e740d1ac8bae3e5a228c1295',1,'uLua::Lua']]]
+  ['tryregistereventhandler_0',['TryRegisterEventHandler',['../classu_lua_1_1_a_p_i.html#a1415bce6f73803285209c2063763d766',1,'uLua::API']]]
 ];

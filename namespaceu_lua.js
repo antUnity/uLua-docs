@@ -2,9 +2,10 @@ var namespaceu_lua =
 [
     [ "AllowLuaOverrideAttribute", "classu_lua_1_1_allow_lua_override_attribute.html", null ],
     [ "API", "classu_lua_1_1_a_p_i.html", "classu_lua_1_1_a_p_i" ],
+    [ "Events", "classu_lua_1_1_events.html", null ],
     [ "ExposedClass", "classu_lua_1_1_exposed_class.html", "classu_lua_1_1_exposed_class" ],
     [ "ExposedMonoBehaviour", "classu_lua_1_1_exposed_mono_behaviour.html", "classu_lua_1_1_exposed_mono_behaviour" ],
-    [ "IHasLuaIndexer", "interfaceu_lua_1_1_i_has_lua_indexer.html", "interfaceu_lua_1_1_i_has_lua_indexer" ],
+    [ "ILuaObject", "interfaceu_lua_1_1_i_lua_object.html", "interfaceu_lua_1_1_i_lua_object" ],
     [ "IndexedUserDataDescriptor", "classu_lua_1_1_indexed_user_data_descriptor.html", null ],
     [ "Lua", "classu_lua_1_1_lua.html", "classu_lua_1_1_lua" ],
     [ "LuaClass", "classu_lua_1_1_lua_class.html", "classu_lua_1_1_lua_class" ],
