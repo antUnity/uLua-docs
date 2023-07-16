@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">uLua<span id="projectnumber">&#160;v2.0.0</span>
+   <div id="projectname">uLua<span id="projectnumber">&#160;v2.1.0</span>
    </div>
    <div id="projectbrief">A Lua Modding Framework for Unity.</div>
   </td>
@@ -99,9 +99,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac5fe3289f5b1b0b383a70ef6b3ece8d2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_lua.html#ac5fe3289f5b1b0b383a70ef6b3ece8d2">Call</a> (DynValue Function, params object[] args)</td></tr>
 <tr class="memdesc:ac5fe3289f5b1b0b383a70ef6b3ece8d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> function with optional parameters. <a href="classu_lua_1_1_lua.html#ac5fe3289f5b1b0b383a70ef6b3ece8d2">More...</a><br /></td></tr>
 <tr class="separator:ac5fe3289f5b1b0b383a70ef6b3ece8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad337d94c5ebd451cac5e8ff962be0734"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_lua.html#ad337d94c5ebd451cac5e8ff962be0734">ExecuteScript</a> (string Code, string Index=&quot;&quot;, bool Force=false)</td></tr>
-<tr class="memdesc:ad337d94c5ebd451cac5e8ff962be0734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the specified code within the <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> context. <a href="classu_lua_1_1_lua.html#ad337d94c5ebd451cac5e8ff962be0734">More...</a><br /></td></tr>
-<tr class="separator:ad337d94c5ebd451cac5e8ff962be0734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af16f51ca881b5b23f136ab99cf6d4500"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_lua.html#af16f51ca881b5b23f136ab99cf6d4500">ExecuteScript</a> (string Code, string codeFriendlyName=&quot;&quot;, bool overwriteExisting=false)</td></tr>
+<tr class="memdesc:af16f51ca881b5b23f136ab99cf6d4500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the specified code within the <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> context. <a href="classu_lua_1_1_lua.html#af16f51ca881b5b23f136ab99cf6d4500">More...</a><br /></td></tr>
+<tr class="separator:af16f51ca881b5b23f136ab99cf6d4500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00741ca4c63070963cd3e76712ef75ae"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_lua.html#a00741ca4c63070963cd3e76712ef75ae">Log</a> (string String)</td></tr>
 <tr class="memdesc:a00741ca4c63070963cd3e76712ef75ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message to the console. <a href="classu_lua_1_1_lua.html#a00741ca4c63070963cd3e76712ef75ae">More...</a><br /></td></tr>
 <tr class="separator:a00741ca4c63070963cd3e76712ef75ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,8 +188,8 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="ad337d94c5ebd451cac5e8ff962be0734" name="ad337d94c5ebd451cac5e8ff962be0734"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad337d94c5ebd451cac5e8ff962be0734">&#9670;&nbsp;</a></span>ExecuteScript()</h2>
+<a id="af16f51ca881b5b23f136ab99cf6d4500" name="af16f51ca881b5b23f136ab99cf6d4500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af16f51ca881b5b23f136ab99cf6d4500">&#9670;&nbsp;</a></span>ExecuteScript()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,13 +207,13 @@ Properties</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>Index</em> = <code>&quot;&quot;</code>, </td>
+          <td class="paramname"><em>codeFriendlyName</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>Force</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>overwriteExisting</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -232,8 +232,8 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Code</td><td>The <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> code to execute. </td></tr>
-    <tr><td class="paramname">Index</td><td>(Optional) A unique identifier for this script. Not recommended to leave blank, especially if the same script is likely to be executed more than once. </td></tr>
-    <tr><td class="paramname">Force</td><td>(Optional) If true, the method will overwrite any previous script with the same index. Otherwise, any previous script with the same index will be called from a hash table. </td></tr>
+    <tr><td class="paramname">codeFriendlyName</td><td>(Optional) A unique identifier for this script. Not recommended to leave blank, especially if the same script is likely to be executed more than once. </td></tr>
+    <tr><td class="paramname">overwriteExisting</td><td>(Optional) If true, the method will overwrite any previous script with the same filename. Otherwise, any previous script will be called from a hash table. </td></tr>
   </table>
   </dd>
 </dl>

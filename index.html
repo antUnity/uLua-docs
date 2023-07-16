@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">uLua<span id="projectnumber">&#160;v2.0.0</span>
+   <div id="projectname">uLua<span id="projectnumber">&#160;v2.1.0</span>
    </div>
    <div id="projectbrief">A Lua Modding Framework for Unity.</div>
   </td>
@@ -210,8 +210,8 @@ Usage Tutorial</h1>
 <div class="line">MyScript();</div>
 </div><!-- fragment --><p >For more information on how to use these commands lookup the Lua programming guide.</p>
 <p >In C#, the following two static methods are available to use in your code:</p>
-<p ><a class="el" href="classu_lua_1_1_a_p_i.html#a9a5ef26647eabe286c7903ce1be3b68c" title="Executes a script from the resource directory.">uLua.API.ExecuteFile()</a></p>
-<p ><a class="el" href="classu_lua_1_1_a_p_i.html#a7b506958b718c9b3917e917544b05449" title="Executes a script from the external directory.">uLua.API.ExecuteExternalFile()</a></p>
+<p ><a class="el" href="classu_lua_1_1_a_p_i.html#a544821d2eb95f8a24cf0caa95ec03e67" title="Executes a script from the resource directory.">uLua.API.ExecuteFile()</a></p>
+<p ><a class="el" href="classu_lua_1_1_a_p_i.html#a87501f08d88b106cb1542f0cafb21153" title="Executes a script from the external directory.">uLua.API.ExecuteExternalFile()</a></p>
 <p >These methods make use of the script execution framework defined by <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a>. This means that you do not need to specify the execution directories when calling these functions. As long as a game object with your <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">uLua.API</a> settings is set up in your scene, you can execute external or internal Lua scripts by the path to their filename.</p>
 <p >Check the full documentation for a list of available parameters and more information on how to use these methods.</p>
 <h3><a class="anchor" id="autotoc_md16"></a>
@@ -759,7 +759,36 @@ Usage Tutorial</h1>
 <div class="line"> </div>
 <div class="line">print(&quot;Hello World!&quot;);</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md40"></a>
-7. Further Support</h2>
+7. Visual Studio Code Debugger</h2>
+<p ><a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> supports the Visual Studio Code debugger for MoonSharp. To use the debugger you must install Visual Studio Code and download the <a href="https://marketplace.visualstudio.com/items?itemName=xanathar.moonsharp-debug">MoonSharp Debug</a> extension from the Visual Studio marketplace. The MoonSharp Debug extension is not actively being developed, however, it works if set up correctly.</p>
+<p >To set up the debugger follow the instructions below:</p><ul>
+<li>Make sure that your MoonSharp installation includes 'MoonSharp.Debugger.VsCode.dll'. The MoonSharp package on the Unity Asset Store already includes this.</li>
+<li>Install Visual Studio Code and the <a href="https://marketplace.visualstudio.com/items?itemName=xanathar.moonsharp-debug">MoonSharp Debug</a> extension from the Visual Studio marketplace.</li>
+<li>Create a workspace in Visual Studio Code with your Lua scripts. Your workspace can include both resource scripts and external scripts from different folders.</li>
+<li>Create a file called 'launch.json' and place it inside the '.vscode' folder in your workspace directory. Copy the contents listed below to your 'launch.json' file.</li>
+</ul>
+<p >**.vscode/launch.json** </p><div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;version&quot;: &quot;0.2.0&quot;,</div>
+<div class="line">    &quot;configurations&quot;: [</div>
+<div class="line">        {</div>
+<div class="line">            &quot;debugServer&quot; : 41912,</div>
+<div class="line">            &quot;name&quot;: &quot;MoonSharp Attach&quot;,</div>
+<div class="line">            &quot;type&quot;: &quot;moonsharp-debug&quot;,</div>
+<div class="line">            &quot;request&quot;: &quot;attach&quot;</div>
+<div class="line">        }</div>
+<div class="line">    ]</div>
+<div class="line">}</div>
+</div><!-- fragment --><p >Visual Studio Code Debug uses the 'launch.json' file to attach the debugger to your Lua scripts, so it is critical that it is set up correctly. <b>It is worth noting that official documentation on the structure of the 'launch.json' file is incorrect, so make sure you use the structure given here.</b></p>
+<ul>
+<li>Enable the Visual Studio Code Debugger in your Unity scene by selecting the option 'Enable Debugger' on the API object inspector.</li>
+<li>Start your scene in the Unity editor or execute your built game.</li>
+<li>Attach the debugger in Visual Studio Code by selecting 'Run -&gt; Start Debugging' on the Visual Studio Code menu or pressing (F5). If the debugger is attached correctly, you will see Lua scripts listed in the 'Debug Console' window in Visual Studio Code as they are executed.</li>
+</ul>
+<p >At this point you will be able to use breakpoints, pause/continue execution, and step through your Lua scripts in Visual Studio Code. The debugger is not perfect, but it works.</p>
+<p >The debugger relies on finding the Lua script files in a directory in order to apply breakpoints. If a file is not found during execution (e.g. a resource file in a compiled version may not be present on the hard drive), MoonSharp creates a temporary copy of the script which you can step through. The location of these temporary files is listed in the debug console as they are executed. You may still use breakpoints in the temporary scripts, but you must use the file generated by MoonSharp.</p>
+<p >For Lua scripts located in Unity resource folders, it is important that the <code>MainResourcesFolder</code> variable in your API object is set correctly in the inspector. <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a> uses this path to locate the resource scripts for debugging, so it is advised that you place all your scripts in the same resources folder. If your Lua scripts are split between multiple resource folders within your project, the debugger will not be able to locate all of them and will create temporary copies of the scripts for debugging.</p>
+<h2><a class="anchor" id="autotoc_md41"></a>
+8. Further Support</h2>
 <p >This covers a large portion of the features in uLua! I hope that this tutorial together with the documentation are enough to get you started on your API development. However, for any further questions do not hesitate to contact <a href="#" onclick="location.href='mai'+'lto:'+'sup'+'po'+'rt@'+'an'+'tso'+'ft'+'war'+'e.'+'co.'+'uk'; return false;">suppo<span class="obfuscator">.nosp@m.</span>rt@a<span class="obfuscator">.nosp@m.</span>ntsof<span class="obfuscator">.nosp@m.</span>twar<span class="obfuscator">.nosp@m.</span>e.co.<span class="obfuscator">.nosp@m.</span>uk</a>.</p>
 <p >I have put together a demo paddle game project which utilises <a class="el" href="namespaceu_lua.html" title="Namespace containing the uLua project.">uLua</a>, and which comes with its own documentation of the API and source code. You may find it <a href="https://bit.ly/PaddleDemo">here</a>.</p>
 <p >This project is the result of many hours of hard work. Please support me by leaving a review on the asset store! Also, follow my <a href="https://twitter.com/_ANTSoftware" title="@_ANTSoftware">Twitter</a>! </p>

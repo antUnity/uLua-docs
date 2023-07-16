@@ -1,7 +1,14 @@
 var searchData=
 [
-  ['this_5bdynvalue_20key_5d_0',['this[DynValue Key]',['../interfaceu_lua_1_1_i_lua_object.html#ac0c5c30cdb923639aed02486408c1161',1,'uLua.ILuaObject.this[DynValue Key]()'],['../classu_lua_1_1_lua_class.html#aa5e39f899a32931d2699eb535330f8dd',1,'uLua.LuaClass.this[DynValue Key]()'],['../classu_lua_1_1_lua_mono_behaviour.html#a6642f068a9c0446b414489f9a8ce1733',1,'uLua.LuaMonoBehaviour.this[DynValue Key]()']]],
-  ['this_5bstring_20key_5d_1',['this[string Key]',['../interfaceu_lua_1_1_i_lua_object.html#a46c4a4b996ffcf9f5ffff9cf51cce106',1,'uLua.ILuaObject.this[string Key]()'],['../classu_lua_1_1_lua_class.html#a2bcd5329309c313afd0407edc7adece4',1,'uLua.LuaClass.this[string Key]()'],['../classu_lua_1_1_lua_mono_behaviour.html#a291d159032e91a0f42d41342c99e803a',1,'uLua.LuaMonoBehaviour.this[string Key]()']]],
-  ['title_2',['Title',['../classu_lua_1_1_script_package.html#a28e4078259c30b8d4b258d36fbc29404',1,'uLua::ScriptPackage']]],
-  ['tryregistereventhandler_3',['TryRegisterEventHandler',['../classu_lua_1_1_a_p_i.html#a1415bce6f73803285209c2063763d766',1,'uLua::API']]]
+  ['savedata_0',['SaveData',['../classu_lua_1_1_a_p_i.html#a4feae7dfb393e8a11f907a96c25ef14b',1,'uLua::API']]],
+  ['savedatapath_1',['SaveDataPath',['../classu_lua_1_1_a_p_i.html#ae11ac18faabb9320023906bd440fdae3',1,'uLua::API']]],
+  ['scriptfileexists_2',['ScriptFileExists',['../classu_lua_1_1_script_loader.html#a8996cd45dce0376c02aa89b127b87363',1,'uLua::ScriptLoader']]],
+  ['scriptloader_3',['ScriptLoader',['../classu_lua_1_1_lua.html#a2a418de4673e1518d7d1716f93eb9523',1,'uLua.Lua.ScriptLoader()'],['../classu_lua_1_1_script_loader.html#ae154322f882d3b09ab97232901c6c382',1,'uLua.ScriptLoader.ScriptLoader()'],['../classu_lua_1_1_script_loader.html',1,'uLua.ScriptLoader']]],
+  ['scriptpackage_4',['ScriptPackage',['../classu_lua_1_1_script_package.html#a723a9cac45f2c5883d2a829ffad14f89',1,'uLua.ScriptPackage.ScriptPackage()'],['../classu_lua_1_1_script_package.html',1,'uLua.ScriptPackage']]],
+  ['scriptpackagejson_5',['ScriptPackageJson',['../classu_lua_1_1_script_package_json.html',1,'uLua']]],
+  ['scriptpackagespath_6',['ScriptPackagesPath',['../classu_lua_1_1_a_p_i.html#a0984986207083c324a1cd62f354ee0fd',1,'uLua::API']]],
+  ['scriptspath_7',['ScriptsPath',['../classu_lua_1_1_a_p_i.html#ae08300a8963e9eab17ab4ab2ba7d539f',1,'uLua::API']]],
+  ['set_8',['Set',['../classu_lua_1_1_lua.html#ad151bb76a3c22611e2d90fe5167ebb37',1,'uLua::Lua']]],
+  ['start_9',['Start',['../classu_lua_1_1_exposed_mono_behaviour.html#a83a0836c5fdc604aa665c92af3e67da3',1,'uLua::ExposedMonoBehaviour']]],
+  ['switchtoexternal_10',['SwitchToExternal',['../classu_lua_1_1_script_package.html#a56fba80af87933287d7328149b390fa6',1,'uLua::ScriptPackage']]]
 ];

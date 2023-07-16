@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">uLua<span id="projectnumber">&#160;v2.0.0</span>
+   <div id="projectname">uLua<span id="projectnumber">&#160;v2.1.0</span>
    </div>
    <div id="projectbrief">A Lua Modding Framework for Unity.</div>
   </td>
@@ -114,12 +114,12 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>GetPackageName</b> 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7b506958b718c9b3917e917544b05449"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a7b506958b718c9b3917e917544b05449">ExecuteExternalFile</a> (string File, string Index=&quot;&quot;, bool Force=false)</td></tr>
-<tr class="memdesc:a7b506958b718c9b3917e917544b05449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a script from the external directory. <a href="classu_lua_1_1_a_p_i.html#a7b506958b718c9b3917e917544b05449">More...</a><br /></td></tr>
-<tr class="separator:a7b506958b718c9b3917e917544b05449"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a5ef26647eabe286c7903ce1be3b68c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a9a5ef26647eabe286c7903ce1be3b68c">ExecuteFile</a> (string File, string Index=&quot;&quot;, bool Force=false)</td></tr>
-<tr class="memdesc:a9a5ef26647eabe286c7903ce1be3b68c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a script from the resource directory. <a href="classu_lua_1_1_a_p_i.html#a9a5ef26647eabe286c7903ce1be3b68c">More...</a><br /></td></tr>
-<tr class="separator:a9a5ef26647eabe286c7903ce1be3b68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87501f08d88b106cb1542f0cafb21153"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a87501f08d88b106cb1542f0cafb21153">ExecuteExternalFile</a> (string File, bool overwriteExisting=false)</td></tr>
+<tr class="memdesc:a87501f08d88b106cb1542f0cafb21153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a script from the external directory. <a href="classu_lua_1_1_a_p_i.html#a87501f08d88b106cb1542f0cafb21153">More...</a><br /></td></tr>
+<tr class="separator:a87501f08d88b106cb1542f0cafb21153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544821d2eb95f8a24cf0caa95ec03e67"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a544821d2eb95f8a24cf0caa95ec03e67">ExecuteFile</a> (string File, bool overwriteExisting=false)</td></tr>
+<tr class="memdesc:a544821d2eb95f8a24cf0caa95ec03e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a script from the resource directory. <a href="classu_lua_1_1_a_p_i.html#a544821d2eb95f8a24cf0caa95ec03e67">More...</a><br /></td></tr>
+<tr class="separator:a544821d2eb95f8a24cf0caa95ec03e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad4b6cab0c4aac473d9c42aea6902556"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#aad4b6cab0c4aac473d9c42aea6902556">Expose&lt; T &gt;</a> (T Object, <a class="el" href="classu_lua_1_1_lua_mono_behaviour.html">LuaMonoBehaviour</a> Context=null)</td></tr>
 <tr class="memdesc:aad4b6cab0c4aac473d9c42aea6902556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposes an object to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. <a href="classu_lua_1_1_a_p_i.html#aad4b6cab0c4aac473d9c42aea6902556">More...</a><br /></td></tr>
 <tr class="separator:aad4b6cab0c4aac473d9c42aea6902556"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,6 +165,10 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>SaveDataPath
 static string&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptsPath</b> = &quot;&quot;</td></tr>
 <tr class="memdesc:ae08300a8963e9eab17ab4ab2ba7d539f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path for user scripts under the external directory.<br /></td></tr>
 <tr class="separator:ae08300a8963e9eab17ab4ab2ba7d539f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff2e6940038c510f8569a9ccef6801ab"><td class="memItemLeft" align="right" valign="top"><a id="aff2e6940038c510f8569a9ccef6801ab" name="aff2e6940038c510f8569a9ccef6801ab"></a>
+static string&#160;</td><td class="memItemRight" valign="bottom"><b>MainResourcesFolder</b> = &quot;&quot;</td></tr>
+<tr class="memdesc:aff2e6940038c510f8569a9ccef6801ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the main resources folder for scripts. Used by the VS Code debugger to find the <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> scripts.<br /></td></tr>
+<tr class="separator:aff2e6940038c510f8569a9ccef6801ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0984986207083c324a1cd62f354ee0fd"><td class="memItemLeft" align="right" valign="top"><a id="a0984986207083c324a1cd62f354ee0fd" name="a0984986207083c324a1cd62f354ee0fd"></a>
 static string&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptPackagesPath</b> = &quot;&quot;</td></tr>
 <tr class="memdesc:a0984986207083c324a1cd62f354ee0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path for script packages under the external directory.<br /></td></tr>
@@ -179,8 +183,8 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 <p >Includes methods to execute <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> scripts, expose game objects to the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">API</a>, and invoke events. Inherits from MonoBehaviour. Intended use is to add to an object in the scene and set up for use.</p>
 <p >This script invokes the <code>SceneLoaded</code> event when the scene is loaded. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7b506958b718c9b3917e917544b05449" name="a7b506958b718c9b3917e917544b05449"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b506958b718c9b3917e917544b05449">&#9670;&nbsp;</a></span>ExecuteExternalFile()</h2>
+<a id="a87501f08d88b106cb1542f0cafb21153" name="a87501f08d88b106cb1542f0cafb21153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87501f08d88b106cb1542f0cafb21153">&#9670;&nbsp;</a></span>ExecuteExternalFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,14 +201,8 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>Index</em> = <code>&quot;&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>Force</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>overwriteExisting</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -223,16 +221,15 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">File</td><td>The <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> file to execute. The file extension must be omitted. </td></tr>
-    <tr><td class="paramname">Index</td><td>(Optional) A unique identifier for this script. Not recommended to leave blank, especially if the same script is likely to be executed more than once. </td></tr>
-    <tr><td class="paramname">Force</td><td>(Optional) If true, the method will overwrite any previous script with the same Index. Otherwise, any previous script with the same Index will be called from a hash table. </td></tr>
+    <tr><td class="paramname">overwriteExisting</td><td>(Optional) If true, the method will overwrite any previous script with the same filename. Otherwise, any previous script will be called from a hash table. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a9a5ef26647eabe286c7903ce1be3b68c" name="a9a5ef26647eabe286c7903ce1be3b68c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a5ef26647eabe286c7903ce1be3b68c">&#9670;&nbsp;</a></span>ExecuteFile()</h2>
+<a id="a544821d2eb95f8a24cf0caa95ec03e67" name="a544821d2eb95f8a24cf0caa95ec03e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a544821d2eb95f8a24cf0caa95ec03e67">&#9670;&nbsp;</a></span>ExecuteFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,14 +246,8 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>Index</em> = <code>&quot;&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>Force</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>overwriteExisting</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -275,8 +266,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">File</td><td>The <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> file to execute. The file extension must be omitted. </td></tr>
-    <tr><td class="paramname">Index</td><td>(Optional) A unique identifier for this script. Not recommended to leave blank, especially if the same script is likely to be executed more than once. </td></tr>
-    <tr><td class="paramname">Force</td><td>(Optional) If true, the method will overwrite any previous script with the same Index. Otherwise, any previous script with the same Index will be called from a hash table. </td></tr>
+    <tr><td class="paramname">overwriteExisting</td><td>(Optional) If true, the method will overwrite any previous script with the same filename. Otherwise, any previous script will be called from a hash table. </td></tr>
   </table>
   </dd>
 </dl>

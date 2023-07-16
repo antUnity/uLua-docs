@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">uLua<span id="projectnumber">&#160;v2.0.0</span>
+   <div id="projectname">uLua<span id="projectnumber">&#160;v2.1.0</span>
    </div>
    <div id="projectbrief">A Lua Modding Framework for Unity.</div>
   </td>
@@ -95,9 +95,9 @@ $(document).ready(function(){initNavTree('classu_lua_1_1_script_loader.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aad7181542ca04fd5e52ab2e318b607b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_script_loader.html#aad7181542ca04fd5e52ab2e318b607b3">ScriptLoader</a> (string AssetsPath=null)</td></tr>
-<tr class="memdesc:aad7181542ca04fd5e52ab2e318b607b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="classu_lua_1_1_script_loader.html" title="A script loader to load scripts from assets in Unity from within the Lua context. Scripts will be loa...">uLua.ScriptLoader</a> class. <a href="classu_lua_1_1_script_loader.html#aad7181542ca04fd5e52ab2e318b607b3">More...</a><br /></td></tr>
-<tr class="separator:aad7181542ca04fd5e52ab2e318b607b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae154322f882d3b09ab97232901c6c382"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_script_loader.html#ae154322f882d3b09ab97232901c6c382">ScriptLoader</a> (string AssetsPath)</td></tr>
+<tr class="memdesc:ae154322f882d3b09ab97232901c6c382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="classu_lua_1_1_script_loader.html" title="A script loader to load scripts from assets in Unity from within the Lua context. Scripts will be loa...">uLua.ScriptLoader</a> class. <a href="classu_lua_1_1_script_loader.html#ae154322f882d3b09ab97232901c6c382">More...</a><br /></td></tr>
+<tr class="separator:ae154322f882d3b09ab97232901c6c382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e79441cb26620166d1ba3e603894d72"><td class="memItemLeft" align="right" valign="top">override object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_script_loader.html#a4e79441cb26620166d1ba3e603894d72">LoadFile</a> (string file, Table globalContext)</td></tr>
 <tr class="memdesc:a4e79441cb26620166d1ba3e603894d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file for reading the script code. It can return either a string, a byte[] or a Stream. If a byte[] is returned, the content is assumed to be a serialized (dumped) bytecode. If it's a string, it's assumed to be either a script or the output of a string.dump call. If a Stream, autodetection takes place.  <a href="classu_lua_1_1_script_loader.html#a4e79441cb26620166d1ba3e603894d72">More...</a><br /></td></tr>
 <tr class="separator:a4e79441cb26620166d1ba3e603894d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,8 +109,8 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p >A script loader to load scripts from assets in Unity from within the <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> context. Scripts will be loaded from a subdirectory of Assets/Resources. </p>
 <p >This class is used by the loadfile and require functions in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aad7181542ca04fd5e52ab2e318b607b3" name="aad7181542ca04fd5e52ab2e318b607b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad7181542ca04fd5e52ab2e318b607b3">&#9670;&nbsp;</a></span>ScriptLoader()</h2>
+<a id="ae154322f882d3b09ab97232901c6c382" name="ae154322f882d3b09ab97232901c6c382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae154322f882d3b09ab97232901c6c382">&#9670;&nbsp;</a></span>ScriptLoader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -122,7 +122,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">uLua.ScriptLoader.ScriptLoader </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>AssetsPath</em> = <code>null</code></td><td>)</td>
+          <td class="paramname"><em>AssetsPath</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -136,7 +136,7 @@ Public Member Functions</h2></td></tr>
 <p>Initializes a new instance of the <a class="el" href="classu_lua_1_1_script_loader.html" title="A script loader to load scripts from assets in Unity from within the Lua context. Scripts will be loa...">uLua.ScriptLoader</a> class.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">AssetsPath</td><td>The path, relative to Assets/Resources. For example if your scripts are stored under Assets/Resources/Scripts/, you should pass the value "Scripts/". If null, the default API.ResourcePath is used. </td></tr>
+    <tr><td class="paramname">AssetsPath</td><td>The path, relative to Assets/Resources. For example if your scripts are stored under Assets/Resources/Scripts/, you should pass the value "Scripts/".</td></tr>
   </table>
   </dd>
 </dl>

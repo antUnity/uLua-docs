@@ -1,7 +1,7 @@
 var classu_lua_1_1_a_p_i =
 [
-    [ "ExecuteExternalFile", "classu_lua_1_1_a_p_i.html#a7b506958b718c9b3917e917544b05449", null ],
-    [ "ExecuteFile", "classu_lua_1_1_a_p_i.html#a9a5ef26647eabe286c7903ce1be3b68c", null ],
+    [ "ExecuteExternalFile", "classu_lua_1_1_a_p_i.html#a87501f08d88b106cb1542f0cafb21153", null ],
+    [ "ExecuteFile", "classu_lua_1_1_a_p_i.html#a544821d2eb95f8a24cf0caa95ec03e67", null ],
     [ "Expose< T >", "classu_lua_1_1_a_p_i.html#aad4b6cab0c4aac473d9c42aea6902556", null ],
     [ "GetPackage", "classu_lua_1_1_a_p_i.html#a9a290d7efe604d27542efcf1a1222fd5", null ],
     [ "GetPackageCount", "classu_lua_1_1_a_p_i.html#ab668f51c44e87ac2ce716f36692845b7", null ],
@@ -18,6 +18,7 @@ var classu_lua_1_1_a_p_i =
     [ "TryRegisterEventHandler", "classu_lua_1_1_a_p_i.html#a1415bce6f73803285209c2063763d766", null ],
     [ "ExternalDirectory", "classu_lua_1_1_a_p_i.html#a7bb50177d7009eae7f2a8d5c9d0046db", null ],
     [ "LuaScriptsExtension", "classu_lua_1_1_a_p_i.html#a9ca842887a9a8735030c7ec2c7696cdf", null ],
+    [ "MainResourcesFolder", "classu_lua_1_1_a_p_i.html#aff2e6940038c510f8569a9ccef6801ab", null ],
     [ "SaveDataPath", "classu_lua_1_1_a_p_i.html#ae11ac18faabb9320023906bd440fdae3", null ],
     [ "ScriptPackagesPath", "classu_lua_1_1_a_p_i.html#a0984986207083c324a1cd62f354ee0fd", null ],
     [ "ScriptsPath", "classu_lua_1_1_a_p_i.html#ae08300a8963e9eab17ab4ab2ba7d539f", null ]

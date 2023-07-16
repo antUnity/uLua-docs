@@ -72,7 +72,8 @@ var NAVTREE =
         ] ],
         [ "5. Saving and Loading Object Data", "index.html#autotoc_md38", null ],
         [ "6. Message, warning, and error logging", "index.html#autotoc_md39", null ],
-        [ "7. Further Support", "index.html#autotoc_md40", null ]
+        [ "7. Visual Studio Code Debugger", "index.html#autotoc_md40", null ],
+        [ "8. Further Support", "index.html#autotoc_md41", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
