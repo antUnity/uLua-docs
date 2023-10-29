@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="uLua2-160x160-Light.png"/></td>
   <td id="projectalign">
-   <div id="projectname">uLua<span id="projectnumber">&#160;v2.1.0</span>
+   <div id="projectname">uLua<span id="projectnumber">&#160;v2.2.0</span>
    </div>
    <div id="projectbrief">A Lua Modding Framework for Unity.</div>
   </td>
@@ -126,6 +127,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae85b13a4101bcfca3c7ad3e552d5e7cf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#ae85b13a4101bcfca3c7ad3e552d5e7cf">Invoke</a> (string Event, params object[] args)</td></tr>
 <tr class="memdesc:ae85b13a4101bcfca3c7ad3e552d5e7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes a game event. <a href="classu_lua_1_1_a_p_i.html#ae85b13a4101bcfca3c7ad3e552d5e7cf">More...</a><br /></td></tr>
 <tr class="separator:ae85b13a4101bcfca3c7ad3e552d5e7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a386b6b9a042dffd6b4c80778a09e3af5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a386b6b9a042dffd6b4c80778a09e3af5">Log</a> (string String)</td></tr>
+<tr class="memdesc:a386b6b9a042dffd6b4c80778a09e3af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message to the console. <a href="classu_lua_1_1_a_p_i.html#a386b6b9a042dffd6b4c80778a09e3af5">More...</a><br /></td></tr>
+<tr class="separator:a386b6b9a042dffd6b4c80778a09e3af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada52e258c5bf614c93adeb538ce9b326"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#ada52e258c5bf614c93adeb538ce9b326">LogError</a> (string String)</td></tr>
+<tr class="memdesc:ada52e258c5bf614c93adeb538ce9b326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs an error to the console. <a href="classu_lua_1_1_a_p_i.html#ada52e258c5bf614c93adeb538ce9b326">More...</a><br /></td></tr>
+<tr class="separator:ada52e258c5bf614c93adeb538ce9b326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b940fac3cc703a6bbf7bacfbc1e911"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a45b940fac3cc703a6bbf7bacfbc1e911">LogWarning</a> (string String)</td></tr>
+<tr class="memdesc:a45b940fac3cc703a6bbf7bacfbc1e911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a warning to the console. <a href="classu_lua_1_1_a_p_i.html#a45b940fac3cc703a6bbf7bacfbc1e911">More...</a><br /></td></tr>
+<tr class="separator:a45b940fac3cc703a6bbf7bacfbc1e911"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d362a6db6d3e03ce35e85eada11c8bc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_a_p_i.html#a2d362a6db6d3e03ce35e85eada11c8bc">LoadSavedData</a> (<a class="el" href="classu_lua_1_1_lua_mono_behaviour.html">LuaMonoBehaviour</a> Object, string Index=&quot;SaveData&quot;)</td></tr>
 <tr class="memdesc:a2d362a6db6d3e03ce35e85eada11c8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads table data saved for the specified object. <a href="classu_lua_1_1_a_p_i.html#a2d362a6db6d3e03ce35e85eada11c8bc">More...</a><br /></td></tr>
 <tr class="separator:a2d362a6db6d3e03ce35e85eada11c8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -396,7 +406,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 </div><div class="memdoc">
 
 <p>Invokes a game event.</p>
-<p >This method is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> as a global and may be called from a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> script or within C#. <a class="el" href="classu_lua_1_1_events.html" title="Static container class for registered events.">Events</a> should be registered in a static constructor, or on awake/start to prevent unexpected behaviour. </p><dl class="params"><dt>Parameters</dt><dd>
+<p >This method is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> as a global and may be called from a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> script or within C#. <a class="el" href="classu_lua_1_1_events.html" title="Static container class for registered events.">Events</a> should registered AFTER Unity's Awake call to prevent unexpected behaviour (e.g. on Unity's scene loaded or start events). <a class="el" href="classu_lua_1_1_events.html" title="Static container class for registered events.">Events</a> may also be registered when an object is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> by overriding <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html#a81c110fb30bdfb8170934ec49ed8085c" title="Scriptable method called when an object is exposed to Lua.">uLua.ExposedMonoBehaviour.OnExpose()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Event</td><td>The name of the event to be invoked. </td></tr>
     <tr><td class="paramname">args</td><td>(Optional) Parameters for the event handler. </td></tr>
@@ -485,6 +495,93 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 
 </div>
 </div>
+<a id="a386b6b9a042dffd6b4c80778a09e3af5" name="a386b6b9a042dffd6b4c80778a09e3af5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a386b6b9a042dffd6b4c80778a09e3af5">&#9670;&nbsp;</a></span>Log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void uLua.API.Log </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>String</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Logs a message to the console.</p>
+<p >Invokes the event 'LuaMessageLogged' which may be handled in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. This method is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> as a global and may be called from a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> script or within C#. </p>
+
+</div>
+</div>
+<a id="ada52e258c5bf614c93adeb538ce9b326" name="ada52e258c5bf614c93adeb538ce9b326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada52e258c5bf614c93adeb538ce9b326">&#9670;&nbsp;</a></span>LogError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void uLua.API.LogError </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>String</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Logs an error to the console.</p>
+<p >Invokes the event 'LuaErrorLogged' which may be handled in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. This method is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> as a global and may be called from a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> script or within C#. </p>
+
+</div>
+</div>
+<a id="a45b940fac3cc703a6bbf7bacfbc1e911" name="a45b940fac3cc703a6bbf7bacfbc1e911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b940fac3cc703a6bbf7bacfbc1e911">&#9670;&nbsp;</a></span>LogWarning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void uLua.API.LogWarning </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>String</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Logs a warning to the console.</p>
+<p >Invokes the event 'LuaWarningLogged' which may be handled in <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. This method is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> as a global and may be called from a <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> script or within C#. </p>
+
+</div>
+</div>
 <a id="aa18d35f539e44f72fe61283dbb08c159" name="aa18d35f539e44f72fe61283dbb08c159"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa18d35f539e44f72fe61283dbb08c159">&#9670;&nbsp;</a></span>RegisterEvent()</h2>
 
@@ -520,7 +617,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>LuaScriptsEx
 </div><div class="memdoc">
 
 <p>Registers an event to the <a class="el" href="classu_lua_1_1_a_p_i.html" title="This script sets up the API framework to your Unity scene.">API</a>.</p>
-<p ><a class="el" href="classu_lua_1_1_events.html" title="Static container class for registered events.">Events</a> should be registered in a static constructor, or on awake/start to prevent unexpected behaviour. </p><dl class="params"><dt>Parameters</dt><dd>
+<p ><a class="el" href="classu_lua_1_1_events.html" title="Static container class for registered events.">Events</a> should registered AFTER Unity's Awake call to prevent unexpected behaviour (e.g. on Unity's scene loaded or start events). <a class="el" href="classu_lua_1_1_events.html" title="Static container class for registered events.">Events</a> may also be registered when an object is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> by overriding <a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html#a81c110fb30bdfb8170934ec49ed8085c" title="Scriptable method called when an object is exposed to Lua.">uLua.ExposedMonoBehaviour.OnExpose()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Event</td><td>The name of the event to be registered. </td></tr>
     <tr><td class="paramname">HandlerName</td><td>(Optional) The name of the event handler function. Defaults to 'On{Event}', e.g. the default even thandler for an event named 'LoadingFinished' would be 'OnLoadingFinished', </td></tr>

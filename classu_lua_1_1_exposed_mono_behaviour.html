@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="uLua2-160x160-Light.png"/></td>
   <td id="projectalign">
-   <div id="projectname">uLua<span id="projectnumber">&#160;v2.1.0</span>
+   <div id="projectname">uLua<span id="projectnumber">&#160;v2.2.0</span>
    </div>
    <div id="projectbrief">A Lua Modding Framework for Unity.</div>
   </td>
@@ -110,6 +111,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a76769e4253ab5bef443dafbb71eee99b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html#a76769e4253ab5bef443dafbb71eee99b">Awake</a> ()</td></tr>
 <tr class="memdesc:a76769e4253ab5bef443dafbb71eee99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposes the game object to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> if ExposeOn is set to 'Awake'. <a href="classu_lua_1_1_exposed_mono_behaviour.html#a76769e4253ab5bef443dafbb71eee99b">More...</a><br /></td></tr>
 <tr class="separator:a76769e4253ab5bef443dafbb71eee99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81c110fb30bdfb8170934ec49ed8085c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html#a81c110fb30bdfb8170934ec49ed8085c">OnExpose</a> ()</td></tr>
+<tr class="memdesc:a81c110fb30bdfb8170934ec49ed8085c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scriptable method called when an object is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>. <a href="classu_lua_1_1_exposed_mono_behaviour.html#a81c110fb30bdfb8170934ec49ed8085c">More...</a><br /></td></tr>
+<tr class="separator:a81c110fb30bdfb8170934ec49ed8085c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83a0836c5fdc604aa665c92af3e67da3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu_lua_1_1_exposed_mono_behaviour.html#a83a0836c5fdc604aa665c92af3e67da3">Start</a> ()</td></tr>
 <tr class="memdesc:a83a0836c5fdc604aa665c92af3e67da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposes the game object to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> if ExposeOn is set to 'Start'. <a href="classu_lua_1_1_exposed_mono_behaviour.html#a83a0836c5fdc604aa665c92af3e67da3">More...</a><br /></td></tr>
 <tr class="separator:a83a0836c5fdc604aa665c92af3e67da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,6 +202,34 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Exposes the game object to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> if ExposeOn is set to 'Awake'.</p>
 <p >The Context object must be set prior to this method being called. Objects will not be exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> if <code>ExposeOn</code> is set to None. If the object is exposed here, this method will also invoke an OnLoad callback and execute a resource script for the object if <code>EnableObjectScript</code> is set to true. This method is called by Unity Engine during game object initialisation. </p>
+
+</div>
+</div>
+<a id="a81c110fb30bdfb8170934ec49ed8085c" name="a81c110fb30bdfb8170934ec49ed8085c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81c110fb30bdfb8170934ec49ed8085c">&#9670;&nbsp;</a></span>OnExpose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void uLua.ExposedMonoBehaviour.OnExpose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Scriptable method called when an object is exposed to <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a>.</p>
+<p >Executes the object <a class="el" href="classu_lua_1_1_lua.html" title="Wrapper class which streamlines use of the MoonSharp Lua context.">Lua</a> script and invokes <code>OnLoad</code> by default. </p>
 
 </div>
 </div>

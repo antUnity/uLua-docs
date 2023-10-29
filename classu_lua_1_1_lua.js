@@ -1,6 +1,7 @@
 var classu_lua_1_1_lua =
 [
     [ "Call", "classu_lua_1_1_lua.html#ac5fe3289f5b1b0b383a70ef6b3ece8d2", null ],
+    [ "Clear", "classu_lua_1_1_lua.html#a2cffa46e8994bfdadfe3ce865fa0f1d8", null ],
     [ "ExecuteScript", "classu_lua_1_1_lua.html#af16f51ca881b5b23f136ab99cf6d4500", null ],
     [ "Get< T >", "classu_lua_1_1_lua.html#aefb7ab1f588c458d2987a698c4e72050", null ],
     [ "Log", "classu_lua_1_1_lua.html#a00741ca4c63070963cd3e76712ef75ae", null ],
